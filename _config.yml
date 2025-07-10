@@ -7,15 +7,15 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "en-UK"
 site_theme               : "default"
-title                    : "Your Name / Site Title"
+title                    : "Dr Victoria Lindsay-McGee"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+name                     : &name "Dr Victoria Lindsay-McGee"
+description              : &description "Equine geneticist, veterinary data analyst, Equine Science MSc programme coordinator and horse husbandry teaching fellow."
+url                      : https://victorialindsaymcgee.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "victorialindsaymcgee/victorialindsaymcgee.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,36 +24,36 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  pronouns         : "she/her"  
+  bio              : "Equine geneticist, veterinary data analyst, Equine Science MSc programme coordinator and horse husbandry teaching fellow."
+  location         : "Edinburgh, UK"
+  employer         : "The University of Edinburgh"
+  uri              : "https://edwebprofiles.ed.ac.uk/profile/victoria-lindsay"
+  email            : "victoria.lindsay-mcgee@ed.ac.uk" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/my-orcid?orcid=0000-0001-7693-5839"
   semantic         : # URL
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
-  scopus           : # URL
+  researchgate     : "https://www.researchgate.net/profile/Victoria-Lindsay-Mcgee"
+  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=58540607400"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "victorialindsaymcgee"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
+  bluesky          : # Replace this with you Bluesky username
+  facebook         : "EdinburghEquine"
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
@@ -61,7 +61,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "victoria-lindsay-mcgee-phd-5b601579"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -85,6 +85,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  lay:
+    title: 'Lay Media'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
