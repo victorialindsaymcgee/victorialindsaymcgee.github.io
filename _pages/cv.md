@@ -11,7 +11,7 @@ redirect_from:
 
 Qualifications
 ======
-* BA<sup>(Hons)</sup> Upper Second Class in Preclinical Veterinary Studies with Natural Sciences - University of Cambridge, 2012
+* BA<sub>(Hons)</sub> Upper Second Class in Preclinical Veterinary Studies with Natural Sciences - University of Cambridge, 2012
 * MSc in Equine Science with Merit - University of Edinburgh, 2017
 * MSc in Instrumental Analytical Science (DNA Analysis, Proteomics and Metabolomics) with Distinction - Robert Gordon University, 2018
 * PhD titled 'Dissecting the genetic architecture of equine exertional rhabdomyolysis' - Royal Veterinary College, 2023 (Winner of the 2023 RVC McKeever Prize for Best Original Research)
