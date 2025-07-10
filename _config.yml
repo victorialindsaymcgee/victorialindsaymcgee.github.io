@@ -23,9 +23,9 @@ repository               : "victorialindsaymcgee/victorialindsaymcgee.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Victoria Lindsay McGee"
   pronouns         : "she/her"  
-  bio              : "Equine geneticist, veterinary data analyst, Equine Science MSc programme coordinator and horse husbandry teaching fellow."
+  bio              : "Equine geneticist, veterinary data analyst, MSc programme coordinator and teaching fellow."
   location         : "Edinburgh, UK"
   employer         : "The University of Edinburgh"
   uri              : "https://edwebprofiles.ed.ac.uk/profile/victoria-lindsay"
@@ -38,7 +38,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/my-orcid?orcid=0000-0001-7693-5839"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Victoria-Lindsay-Mcgee"
   scopus           : "https://www.scopus.com/authid/detail.uri?authorId=58540607400"
 
