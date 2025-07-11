@@ -2,7 +2,7 @@
 title: "Course Organiser for Research Methods Data Analysis"
 collection: teaching
 type: "Postgraduate taught online course"
-permalink: /teaching/2023-eqsci-rmda
+permalink: /teaching/2024-eqsci-rmda
 venue: "Royal (Dick) School of Veterinary Studies, University of Edinburgh"
 date: 2024-04-01
 location: "Edinburgh, UK"

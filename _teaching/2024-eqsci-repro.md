@@ -2,7 +2,7 @@
 title: "Lecturing on Equine Reproduction"
 collection: teaching
 type: "Postgraduate taught online course"
-permalink: /teaching/2023-eqsci-rmda
+permalink: /teaching/2024-eqsci-repro
 venue: "Royal (Dick) School of Veterinary Studies, University of Edinburgh"
 date: 2024-01-05
 location: "Edinburgh, UK"
