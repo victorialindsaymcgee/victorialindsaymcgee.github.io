@@ -3,7 +3,7 @@ title: "Horse husbandry practical teaching"
 collection: teaching
 type: "Undergraduate veterinary medicine course"
 permalink: /teaching/2022-bvms-husbandry
-venue: ", Royal (Dick) School of Veterinary Studies, University of Edinburgh"
+venue: "Royal (Dick) School of Veterinary Studies, University of Edinburgh"
 date: 2022-08-01
 location: "Edinburgh, UK"
 ---
