@@ -88,6 +88,16 @@ publication_category:
   lay:
     title: 'Lay Media'
 
+portfolio_category:
+  projects:
+    title: 'Research Projects'
+  phd:
+    title: 'PhD Projects'
+  msc:
+    title: 'MSc Projects'    
+  other:
+    title: 'Other Projects'
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
