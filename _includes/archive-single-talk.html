@@ -38,5 +38,20 @@
     {% if post.date %}<p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
     {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+  
+  <!-- Add citation and URLs if available -->
+    {% if post.citation %}
+      <p style="font-size: smaller">Recommended citation: {{ post.citation }}</p>
+    {% endif %}
+    {% if post.paperurl %}
+      <p><a href="{{ post.paperurl }}">Conference abstracts</a></p>
+    {% endif %}
+    {% if post.slidesurl %}
+      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% endif %}
+    {% if post.bibtexurl %}
+      <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% endif %}
+    
   </article>
 </div>
