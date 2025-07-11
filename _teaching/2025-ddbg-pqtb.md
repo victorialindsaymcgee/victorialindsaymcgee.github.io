@@ -2,7 +2,7 @@
 title: "Lecturing on Population and Quantitative Genetics for Breeding"
 collection: teaching
 type: "Postgraduate taught online course"
-permalink: /teaching/2026-ddbg-pqtb
+permalink: /teaching/2025-ddbg-pqtb
 venue: "Royal (Dick) School of Veterinary Studies, University of Edinburgh"
 date: 2025-10-15
 location: "Edinburgh, UK"
