@@ -9,3 +9,5 @@ location: "Caen, France"
 ---
 
 Citation: Lindsay-McGee V, Clark EL, Piercy RJ, Psifidi A (2024) Poster: Breed-specific SNP and genomic regions associated with equine recurrent exertional rhabdomyolysis susceptibility overlapped with up- and down-regulatory histone modifications. <i>14th International Havemeyer Foundation Horse Genome Workshop </i>
+
+[Conference Abstracts](/files/havemeyer-2024-abstracts.pdf){: .btn--research}
