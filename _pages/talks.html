@@ -11,23 +11,6 @@ author_profile: true
 
 {% endif %}
 
-<!-- New style rendering if talks categories are defined -->
-{% if site.talks_category %}
-  {% for category in site.talks_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.talks reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.talks reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}
