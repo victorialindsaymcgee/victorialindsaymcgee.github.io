@@ -8,4 +8,4 @@ date: 2025-09-15
 location: "Edinburgh, UK"
 ---
 
-I deliver a lecture on nutrition for horses with neuromuscular diseases for the Equine Digestion & Nutrition 20 credit postgraduate taught online course on the [MSc in Equine Science](https://vet.ed.ac.uk/education/postgraduate/taught/msc-equine-science) programme.
+I deliver a lecture on nutrition for horses with neuromuscular diseases for the [Equine Digestion & Nutrition](https://vet.ed.ac.uk/studying/postgraduate/taught-programmes/msc-equine-science/professional-development#equine-digestion) 20 credit postgraduate taught online course on the [MSc in Equine Science](https://vet.ed.ac.uk/education/postgraduate/taught/msc-equine-science) programme.
