@@ -10,4 +10,3 @@ paperurl: 'https://dx.doi.org/10.1111/evj.14128'
 citation: 'Lindsay-McGee V, Massey C, Li YT, Clark EL, Psifidi A, & Piercy RJ (2024) Characterisation of phenotypic patterns in equine exertional myopathy syndrome.  <i>Equine Veterinary Journal</i>.'
 ---
 
-Using [MathJax](https://www.mathjax.org/) in the description is supported - $$E=mc^2$$ - however, the use must be mindful that the default delimiters are `$$...$$` and `\\[...\\]` which differs from the `$...$` that is typically expected.
