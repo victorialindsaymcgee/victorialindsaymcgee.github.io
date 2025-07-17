@@ -8,4 +8,4 @@ date: 2025-10-15
 location: "Edinburgh, UK"
 ---
 
-I deliver a lecture on equine quantitative and complex trait genetics for the Principles in Genetic Evaluation 10 credit postgraduate taught online course on the [MSc in Data-Driven Genetics & Breeding](https://vet.ed.ac.uk/global-agriculture-food-systems/study/data-driven-breeding-and-genetics) programme.
+I deliver a lecture on equine breeding goals and studbooks for the Principles in Genetic Evaluation 10 credit postgraduate taught online course on the [MSc in Data-Driven Genetics & Breeding](https://vet.ed.ac.uk/global-agriculture-food-systems/study/data-driven-breeding-and-genetics) programme.
