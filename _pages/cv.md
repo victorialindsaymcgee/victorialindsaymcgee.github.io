@@ -76,7 +76,7 @@ Service and leadership
 * Member of the Royal Society of Biology
 * Member of the British Society of Animal Science, accredited BSAS Associate Registered Animal Scientist, Member of the BSAS Early Careers Council
 * Member of the Genetics Society
-* Fellow of the Royal Statistical Society
+* Fellow of the Royal Statistical Society, and accredited RSS Data Analyst
 
 ### Volunteering
 
