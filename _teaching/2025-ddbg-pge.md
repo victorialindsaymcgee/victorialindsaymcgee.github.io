@@ -4,7 +4,7 @@ collection: teaching
 type: "Postgraduate taught online course"
 permalink: /teaching/2025-ddbg-pqe
 venue: "Royal (Dick) School of Veterinary Studies, University of Edinburgh"
-date: 2025-10-15
+date: 2026-01-15
 location: "Edinburgh, UK"
 ---
 
