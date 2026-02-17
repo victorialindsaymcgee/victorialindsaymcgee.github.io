@@ -73,16 +73,15 @@ Service and leadership
 ### Learned society membership
 
 * Associate Fellow of the Higher Education Academy
-* Member of the Royal Society of Biology
 * Member of the British Society of Animal Science, accredited BSAS Associate Registered Animal Scientist, Member of the BSAS Early Careers Council
 * Member of the Genetics Society
 * Fellow of the Royal Statistical Society, and accredited RSS Data Analyst
 
 ### Volunteering
 
-* Aug 2022-present: [CamScot](https://camscot.org/) Alumni Mock Interviewer
-* September 2020 – February 2025: Trustee of the Scottish Friends of Pembroke College
 * March 2020 – present: Volunteer Journal Reviewer for The Equine Veterinary Journal, BMC Genomics, Scientific Reports, UK Vet Equine, PloS Genetics
+* September 2020 – February 2025: Trustee of the Scottish Friends of Pembroke College
+* August 2022 - August 2023: [CamScot](https://camscot.org/) Alumni Mock Interviewer
 * August 2020 – August 2022: Postgraduate Co-Officer for the Royal Veterinary College Students’ Union
 * Summer 2019: Volunteer at the Royal Veterinary College Royal Society Summer Exhibition Stand
 * September 2017 – September 2018: Peer Tutor at The University of Edinburgh
@@ -101,5 +100,5 @@ Personal
 ======
 
 * I have been a keen horse rider since I was a child, competing in eventing and affiliated dressage as well as taking part in common ridings. In 2014-15 I stabled my horse at a professional event rider’s yard where I would occasionally assist with handling and exercising fit 4* event horses.
-* I am a qualified rugby referee, refereeing age grade and adult 15s and 7s in the Scottish Borders for the Borders Rugby Referees Society, and assistant refereeing at national amateur fixtures as a member of the Scottish Rugby National Assistant Referees Panel. Refereeing at this level requires coaching skills and the ability to manage people and make decisions in a fast-paced and high adrenaline situation. I also act as the Secretary for the Borders Rugby Referees Society and sit as a BRRS Representative on the Scottish Rugby Referees Association committee. In 2025 I was awarded the National Community Match Official of the Season Award by Scottish Rugby.
+* I am a qualified rugby referee, refereeing age grade and adult 15s and 7s in the Scottish Borders for the Borders Rugby Referees Society, and assistant refereeing at national league amateur fixtures. Refereeing at this level requires coaching skills and the ability to manage people and make decisions in a fast-paced and high adrenaline situation. I also act as the Secretary for the Borders Rugby Referees Society. In 2025 I was awarded the National Community Match Official of the Season Award by Scottish Rugby.
 
