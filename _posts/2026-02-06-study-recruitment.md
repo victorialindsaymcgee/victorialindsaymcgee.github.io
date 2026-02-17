@@ -8,6 +8,8 @@ tags:
   - genetics
 ---
 
+Recruiting for study partipants:
+
 Assessment of Factors Affecting Body Condition Score in Young Warmblood Horses
 ======
 
