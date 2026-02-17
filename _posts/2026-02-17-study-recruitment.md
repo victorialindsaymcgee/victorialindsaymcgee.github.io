@@ -19,6 +19,6 @@ Horse body condition, whether lean, moderate, or overweight, can affect a horseâ
 
 You must be at least 18 years old to participate in this survey. The survey is open to horse owners in any country. Your participation should take about 15-20 minutes and is completely voluntary. 
 
-If you are interested in participating, please click [here](https://app.onlinesurveys.jisc.ac.uk/s/edinburgh/how-well-do-owners-estimate-obesity-and-bcs-in-their-horses-as-) to launch the survey.
+If you are interested in participating, please click [here](https://app.onlinesurveys.jisc.ac.uk/s/edinburgh/how-well-do-owners-estimate-obesity-and-bcs-in-horses) to launch the survey.
 
 Thank you for your time!
