@@ -25,6 +25,9 @@ main:
     
   - title: "CV"
     url: /cv/
-    
+
+  - title: "Open Educational Resources"
+    url: /oer/
+  
   # - title: "CV"
   #   url: /cv-json/
