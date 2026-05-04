@@ -68,10 +68,11 @@ We have tried to make the OER accessible to people who are d/Deaf or hard of hea
   Download the Jupyter Notebook
 </a>
 
-<a class="btn btn--primary" href="https://colab.research.google.com/?url={{ '/files/seaborn_notebook.ipynb' | relative_url | absolute_url | uri_escape }}"
+<a href="https://colab.research.google.com/github/victorialindsaymcgee/victorialindsaymcgee.github.io/blob/master/files/seaborn_notebook.ipynb"
    target="_blank" rel="noopener">
-  Or open in Google Colab
+  Or open this notebook in Google Colab
 </a>
+
 
 ## CC License
 This work was created by [James Donaldson](https://jamesdonaldson.github.io/), [Clare Pridans](https://inflammation-research.ed.ac.uk/research/research-groups/dr-clare-pridans), [Martina Cerna](https://www.linkedin.com/in/martina-%C4%8D-ba2b52217/), and Victoria Lindsay‑McGee as part of the University of Edinburgh Postgraduate Certificate in Academic Practice.
