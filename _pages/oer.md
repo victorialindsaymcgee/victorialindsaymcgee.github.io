@@ -9,7 +9,7 @@ Below are some open educational resources I've been involved in producing.
 <!-- Auto-list any pages in pages/oer/ (excluding this index). -->
 <ul class="list-unstyled">
   {% assign pages_in_oer = site.pages 
-     | where_exp: "p", "p.path contains 'pages/oer/'" 
+     | where_exp: "p", "p.path contains '/oer/'" 
      | where_exp: "p", "p.url != '/oer/'" 
      | sort: "title" %}
   {% for p in pages_in_oer %}
