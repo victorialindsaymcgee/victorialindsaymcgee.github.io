@@ -1,0 +1,120 @@
+00:00:00:15 - 00:00:09:08
+Narrator
+In this exercise, we'll look at different ways to explore data with seaborn. Instead of using your own data, you'll use the datasets that seaborn comes with.
+
+00:00:09:09 - 00:00:17:16
+Narrator
+As with previous exercises in Jupyter Notebook, you'll see a mixture of instructional texts like this and coding blocks like this.
+
+00:00:17:17 - 00:00:31:11
+Narrator
+The latter can be run with the play button, as you can see here. When a script is done, you'll see a green checkmark with the time it took to run. So this first block is just
+
+00:00:31:11 - 00:00:40:09
+Narrator
+how to get Python ready to run your code. It imports seaborn and pandas, the two libraries we'll be using, and it loads the exercise dataset.
+
+00:00:40:11 - 00:00:46:00
+Narrator
+Don't worry if it takes a few seconds to run. Sometimes services need to be loaded in the background.
+
+00:00:46:02 - 00:00:56:15
+Narrator
+Whenever you load data, it's a good idea to have a look at it. And the easiest way to do that is to type the name you've given the data.
+
+00:00:56:17 - 00:01:05:20
+Narrator
+Now we can see here that we've got several columns. The data is talking about the heart rate or pulse of individuals with different characteristics in different
+
+00:01:06:00 - 00:01:18:14
+Narrator
+situations. More specifically, we've got a column of increasing numbers, presumably an index. Some ID numbers here. This repeats sometimes. So this is the ID of the individual being tested. A diet column
+
+00:01:18:14 - 00:01:27:04
+Narrator
+Here we see that some individuals are on a low-fat diet. Well others are on a no-fat diet. There may be more types of diet. I don't know
+
+00:01:27:06 - 00:01:43:03
+Narrator
+there's a pulse column that shows the heart rate detected, a time column with minutes, presumably how far into the session the heart rate was taken, and a kind column with rest and running, which seems to indicate what sort of activity was being done.
+
+00:01:43:05 - 00:01:56:02
+Narrator
+We can examine individual columns to see more about the data that they contain. For example, here, if we look within exercise at pulse and ask for a description of it,
+
+00:01:56:04 - 00:02:05:03
+Narrator
+we can see how many pulses were recorded, what the average rate was, what the minimum and the maximum were, and so on
+
+00:02:05:05 - 00:02:16:13
+Narrator
+We can check up on our assumptions about diet, which we talked about earlier. So if I replace pulse with diet and run it again okay, I can see there are two unique values here.
+
+00:02:16:13 - 00:02:27:02
+Narrator
+Not more. So we're comparing no fat versus low fat. Anyhow let's go back to pulse which has a lot of variety in it. It's good to visualise that variety in different ways.
+
+00:02:27:02 - 00:02:42:09
+Narrator
+In your statistics course you will have learned about histograms. Histograms let us see how many entries fall into various ranges, which are often called buckets. Let's take a look at a histogram here.
+
+00:02:42:10 - 00:02:48:09
+Narrator
+So a big bucket could be from 80 to 90-something like this
+
+00:02:48:11 - 00:03:04:19
+Narrator
+You could have buckets that are ten wide that would go from 90 to 100 or smaller buckets that go from 90 to 95. You can play around with bin width for different bucket sizes. So let's say instead of 15 like we've got here we go for ten.
+
+00:03:04:21 - 00:03:31:15
+Narrator
+Or maybe five. And you can make the decision about which one is the best representation of your data. Another way to look at our data is to plot the result directly, but to divide up those plots by category. So let's say we want to plot the heart rate the pulse here over the y axis. Let's hit play and see what that looks like.
+
+00:03:31:16 - 00:03:49:20
+Narrator
+So that gives us a really good idea of what the data is like. It's clustered here at the bottom where we already saw the mean was, but we can split this collection according to categorical variables that we also saw. So let's do it by diet. Let's put all the no-fat in one group and all the low-fat in another group.
+
+00:03:49:20 - 00:03:55:15
+Narrator
+That is, we'll use the x axis to plot the diet.
+
+00:03:55:17 - 00:03:59:19
+Narrator
+And there we can see what the results are.
+
+00:03:59:21 - 00:04:10:02
+Narrator
+We could do the same thing with kind of exercise. Remember that was another categorical column.
+
+00:04:10:04 - 00:04:18:17
+Narrator
+So you can see here we've just replaced diet with kind for X. And we now know what it looks like when people are resting, walking and running.
+
+00:04:18:19 - 00:04:34:03
+Narrator
+it'd be nice to see both diet and kind at the same time. Well there are other ways of telling these dots apart. There's putting them in different places, but we could also change their colour or hue.
+
+00:04:34:05 - 00:04:58:03
+Narrator
+So let's run that and see what that looks like. So we can see we still are dividing it by kind into the three categories. And then we're also using a categorical distinction to change the dots between blue and orange. Now if you wanted to switch those around guess how we could do it. Pause the video and try things out.
+
+00:04:58:05 - 00:05:19:21
+Narrator
+If you switched around kind and diet, you're right. Let's do that here and run it again. And you can see this might be a little bit more difficult to distinguish because there's more colours in only two different places that they are found, but it's another way of splitting up the data.
+
+00:05:20:01 - 00:05:43:10
+Narrator
+Don't be afraid to play around like this. This is all hosted in the cloud and can be restored to the beginning state quite easily. So your experiments aren't going to hurt anything. Now when you're ready, it's time to apply what you've learned to another dataset included with seaborn, the tips dataset. So I'll run this. Have a look at it and think about what you're seeing.
+
+00:05:43:10 - 00:05:49:09
+Narrator
+It's a bigger dataset. As you can see there are 244 rows. It skips out the ones in the middle.
+
+00:05:49:11 - 00:06:03:14
+Narrator
+How are you going to describe it? How would you use histograms? How would you plot it with categorical divisions? If you get stuck, just scroll up to remember how we did it with the exercise dataset.
+
+00:06:03:16 - 00:06:10:14
+Narrator
+As you do this, think about what the most interesting thing is that you notice. Next week we'll go through your answers at the beginning of class.
+
