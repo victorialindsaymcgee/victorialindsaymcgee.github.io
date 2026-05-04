@@ -65,7 +65,7 @@ Service and leadership
 
 * Organising Committee member for the [2025 BSAS Equine Conference](https://www.bsas.org.uk/events/article/bsas-equine-conference-2025)
 * Organising Committee member for the 2024 Edinburgh Next Generation of Genomics Symposium (ENGoGS)
-* Member of the [British Society of Animal Science](https://www.bsas.org.uk) [Early Career Council](https://www.bsas.org.uk/undergraduates-and-early-career/council-members/), Early Careers Rep on the BSAS Publications Committee, and member of the Judging Panel for the [BSAS Undergraduate Thesis of the Year Award](https://www.bsas.org.uk/undergraduates-and-early-career/thesis-of-the-year/)
+* Member of the [British Society of Animal Science](https://www.bsas.org.uk) and member of the Judging Panel for the [BSAS Undergraduate Thesis of the Year Award](https://www.bsas.org.uk/undergraduates-and-early-career/thesis-of-the-year/). Previously member of the [Early Career Council](https://www.bsas.org.uk/undergraduates-and-early-career/council-members/) (2019-2026) and Early Careers Rep on the BSAS Publications Committee.
 * Reviewer for the R(D)SVS Veterinary Ethical Review Committee
 * Member of the R(D)SVS Quality Assurance and Enhancement Committee
 * Member of the R(D)SVS PGT Teaching & Learning Committee
@@ -73,13 +73,13 @@ Service and leadership
 ### Learned society membership
 
 * Associate Fellow of the Higher Education Academy
-* Member of the British Society of Animal Science, accredited BSAS Associate Registered Animal Scientist, Member of the BSAS Early Careers Council
+* Member of the British Society of Animal Science, accredited BSAS Associate Registered Animal Scientist
 * Member of the Genetics Society
 * Fellow of the Royal Statistical Society, and accredited RSS Data Analyst
 
 ### Volunteering
 
-* March 2020 – present: Volunteer Journal Reviewer for The Equine Veterinary Journal, BMC Genomics, Scientific Reports, UK Vet Equine, PloS Genetics
+* March 2020 – present: Volunteer Journal Reviewer for The Equine Veterinary Journal, BMC Genomics, Scientific Reports, Italian Journal of Animal Science, PloS Genetics
 * September 2020 – February 2025: Trustee of the Scottish Friends of Pembroke College
 * August 2022 - August 2023: [CamScot](https://camscot.org/) Alumni Mock Interviewer
 * August 2020 – August 2022: Postgraduate Co-Officer for the Royal Veterinary College Students’ Union
