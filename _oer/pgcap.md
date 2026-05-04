@@ -1,5 +1,5 @@
 ---
-title: "Getting Comfortable with Graphs in Seaborn"
+title: "Getting Comfortable with Graphs in Python seaborn"
 date: 2026-05-03
 permalink: /oer/seaborn-graphs/
 excerpt: "Short intro video, a downloadable Jupyter Notebook, and useful links."
@@ -8,7 +8,11 @@ excerpt: "Short intro video, a downloadable Jupyter Notebook, and useful links."
 ---
 
 ## Overview
-This resource will help you get started with using the Python library seaborn for plotting graphs.
+This Online Educational Resource supports students to create visualisations with Python for APA reports.
+ 
+The exercise should take exactly 10 minutes.  The first part involves teacher-led guidance in you can follow along with instructions, interacting with the notebook on your own computer as you listen to guidance.  It should then take around 4 minutes in the second part to apply what you've learned to a new dataset.
+ 
+We have tried to make the OER accessible to people who are d/Deaf or hard of hearing by attaching a text file with the transcript for the video.
 
 ## Watch the video guide
 
