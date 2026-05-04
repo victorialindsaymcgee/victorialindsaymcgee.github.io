@@ -98,6 +98,15 @@ portfolio_category:
   other:
     title: 'Other Projects'
 
+  oer_category:
+  videos:
+    title: "Interactive resource"
+  notebooks:
+    title: "Online textbook"
+  guides:
+    title: "Video guide"
+
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)

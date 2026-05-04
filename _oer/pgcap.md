@@ -1,6 +1,6 @@
 ---
 title: "Getting Comfortable with Graphs in Seaborn"
-date: 2026-05-04
+date: 2026-05-03
 permalink: /oer/seaborn-graphs/
 excerpt: "Short intro video, a downloadable Jupyter Notebook, and useful links."
 # layout comes from your collection defaults

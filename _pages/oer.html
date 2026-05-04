@@ -1,0 +1,32 @@
+---
+layout: archive
+title: "Open Educational Resources"
+permalink: /oer/
+author_profile: true
+entries_layout: list
+---
+
+{% include base_path %}
+
+Here are some open educational resources I've been involved in producing:
+
+<!-- New style rendering if OER categories are defined -->
+{% if site.oer_category %}
+  {% for category in site.oer_category %}
+    {% assign title_shown = false %}
+    {% for post in site.oer reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2 id="{{ category[0] | slugify }}">{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.oer reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
