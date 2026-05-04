@@ -74,7 +74,8 @@ We have tried to make the OER accessible to people who are d/Deaf or hard of hea
 </a>
 
 ## CC License
-This work was created by James Donaldson with help from Clare Pridans, Martina Cerna, and Victoria Lindsay‑McGee as part of the University of Edinburgh Postgraduate Certificate in Academic Practice.
+This work was created by [James Donaldson](https://jamesdonaldson.github.io/) with help from [Clare Pridans](https://inflammation-research.ed.ac.uk/research/research-groups/dr-clare-pridans), [Martina Cerna](https://www.linkedin.com/in/martina-%C4%8D-ba2b52217/), and Victoria Lindsay‑McGee as part of the University of Edinburgh Postgraduate Certificate in Academic Practice.
+
 
 This work is licensed under a
 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener">
