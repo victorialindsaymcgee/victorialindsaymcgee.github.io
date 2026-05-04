@@ -11,8 +11,7 @@ A quick primer on open education, open licensing, and where to find and share OE
 ## Watch the video guide
 
 <div class="oer-video">
-  <video controls preload="metadata"
-         poster="{{ '/files/intro-oer-poster.jpg' | relative_url }}">
+  <video>
     <source src="{{ '/files/seaborn_presentation.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support this video.
   </video>
