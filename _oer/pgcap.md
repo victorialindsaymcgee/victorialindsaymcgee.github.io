@@ -18,13 +18,6 @@ This resource will help you get started with using the Python library seaborn fo
     Your browser does not support HTML5 video.
   </video>
 </div>
-
-<p>
-  <a class="btn btn--primary" href="{{ '/files/seaborn_presentation.mp4' | relative_url }}" download>
-    Download the video (MP4)
-  </a>
-</p>
-
 <style>
 /* Keep the video responsive within Minimal Mistakes/AcademicPages */
 .oer-video video {
@@ -35,15 +28,8 @@ This resource will help you get started with using the Python library seaborn fo
 }
 </style>
 
-## Transcript
-
-- Download the transcript:
-  <a href="{{ '/files/seaborn_script.txt' | relative_url }}" download>seaborn_script.txt</a>
-
-- Or read it inline below:
-
 <details class="oer-transcript">
-  <summary>Show transcript</summary>
+  <summary>Show video transcript</summary>
   <pre id="seaborn-transcript" aria-label="Video transcript">Loading transcript…</pre>
 </details>
 
@@ -78,12 +64,9 @@ This resource will help you get started with using the Python library seaborn fo
   Download the Jupyter Notebook
 </a>
 
-<br><br>
-
-<!-- Open the same notebook directly in Google Colab -->
-<a href="https://colab.research.google.com/?url={{ '/files/seaborn_notebook.ipynb' | relative_url | absolute_url | uri_escape }}"
+<a class="btn btn--primary" href="https://colab.research.google.com/?url={{ '/files/seaborn_notebook.ipynb' | relative_url | absolute_url | uri_escape }}"
    target="_blank" rel="noopener">
-  Or open this notebook in Google Colab
+  Or open in Google Colab
 </a>
 
 ## CC License
