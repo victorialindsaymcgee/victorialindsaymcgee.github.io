@@ -68,7 +68,7 @@ We have tried to make the OER accessible to people who are d/Deaf or hard of hea
   Download the Jupyter Notebook
 </a>
 
-<a href="https://colab.research.google.com/github/victorialindsaymcgee/victorialindsaymcgee.github.io/blob/master/files/seaborn_notebook.ipynb"
+<a class="btn btn--primary" href="https://colab.research.google.com/github/victorialindsaymcgee/victorialindsaymcgee.github.io/blob/master/files/seaborn_notebook.ipynb"
    target="_blank" rel="noopener">
   Or open this notebook in Google Colab
 </a>
