@@ -67,7 +67,7 @@ Service and leadership
 * Organising Committee member for the [2025](https://www.bsas.org.uk/events/article/bsas-equine-conference-2025) and 2027 BSAS Equine Conference
 * Organising Committee member for the 2024 Edinburgh Next Generation of Genomics Symposium (ENGoGS)
 * Member of the [British Society of Animal Science](https://www.bsas.org.uk) and member of the Judging Panel for the [BSAS Undergraduate Thesis of the Year Award](https://www.bsas.org.uk/undergraduates-and-early-career/thesis-of-the-year/). Previously member of the [Early Career Council](https://www.bsas.org.uk/undergraduates-and-early-career/council-members/) (2019-2026) and Early Careers Rep on the BSAS Publications Committee.
-* BISAS member of the  [*animal*][https://animal-journal.eu/] journal family management board as of 2026
+* BISAS member of the  [*animal*](https://animal-journal.eu/) journal family management board as of 2026
 * Reviewer for the R(D)SVS Veterinary Ethical Review Committee
 * Member of the R(D)SVS AI Working Group
 * Member of the R(D)SVS PGT Teaching & Learning Committee
