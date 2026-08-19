@@ -4,7 +4,7 @@ collection: teaching
 type: "Postgraduate taught online course"
 permalink: /teaching/2026-eqsci-eoshm
 venue: "Royal (Dick) School of Veterinary Studies, University of Edinburgh"
-date: 2026-01-05
+date: 2026-09-25
 location: "Edinburgh, UK"
 ---
 
