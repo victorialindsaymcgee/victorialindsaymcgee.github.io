@@ -15,6 +15,7 @@ Qualifications
 * MSc in Equine Science with Merit - University of Edinburgh, 2017
 * MSc in Instrumental Analytical Science (DNA Analysis, Proteomics and Metabolomics) with Distinction - Robert Gordon University, 2018
 * PhD titled 'Dissecting the genetic architecture of equine exertional rhabdomyolysis' - Royal Veterinary College, 2023 (Winner of the 2023 RVC McKeever Prize for Best Original Research)
+* Postgraduate Certificate in Academic Practice - University of Edinburgh, 2027 (Expected)
 
 Work experience
 ======
@@ -63,17 +64,18 @@ Service and leadership
 ======
 ### Committee membership
 
-* Organising Committee member for the [2025 BSAS Equine Conference](https://www.bsas.org.uk/events/article/bsas-equine-conference-2025)
+* Organising Committee member for the [2025](https://www.bsas.org.uk/events/article/bsas-equine-conference-2025) and 2027 BSAS Equine Conference
 * Organising Committee member for the 2024 Edinburgh Next Generation of Genomics Symposium (ENGoGS)
 * Member of the [British Society of Animal Science](https://www.bsas.org.uk) and member of the Judging Panel for the [BSAS Undergraduate Thesis of the Year Award](https://www.bsas.org.uk/undergraduates-and-early-career/thesis-of-the-year/). Previously member of the [Early Career Council](https://www.bsas.org.uk/undergraduates-and-early-career/council-members/) (2019-2026) and Early Careers Rep on the BSAS Publications Committee.
+* BISAS member of the  [*animal*][https://animal-journal.eu/] journal family management board as of 2026
 * Reviewer for the R(D)SVS Veterinary Ethical Review Committee
-* Member of the R(D)SVS Quality Assurance and Enhancement Committee
+* Member of the R(D)SVS AI Working Group
 * Member of the R(D)SVS PGT Teaching & Learning Committee
 
 ### Learned society membership
 
 * Associate Fellow of the Higher Education Academy
-* Member of the British Society of Animal Science, accredited BSAS Associate Registered Animal Scientist
+* Member of the British Society of Animal Science
 * Member of the Genetics Society
 * Fellow of the Royal Statistical Society, and accredited RSS Data Analyst
 
@@ -91,6 +93,7 @@ Service and leadership
 Funding & Awards
 ======
 
+* Co-supervisor on a competition-funded EastBio Doctoral Training Programme studentship funded 2025-2029
 * Winner of the Royal Veterinary College McKeever Prize for the Best Original Research Paper in a Graduating PhD Student at the 2023 RVC Graduation.
 * I contributed to and was named on a successful 2022 Horserace Betting Levy Board grant application for a three-year postdoctoral project studying regulatory genomics of horse muscle tissue, including bulk and single-cell transcriptomics, chromatin accessibility, and chromatin interaction modelling.
 * Runner up for the Poster Prize at the ‘Functional Regulatory Genomics and Disease: Genetics Society Meeting 2022’
