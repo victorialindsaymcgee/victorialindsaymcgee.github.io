@@ -3,7 +3,7 @@ title: "Characterisation of phenotypic patterns in equine exertional myopathy sy
 collection: publications
 category: manuscripts
 permalink: /publication/2024-07-05-vlm-phd-phenotypes
-excerpt: 'This paper found two distinct phenotypes within recurrent exertional rhabdomyolsyis syndrome in horses, that clustered based on patterns of clinical signs, indicating potential novel subtypes of the disease.'
+excerpt: 'This paper found two distinct phenotypes within recurrent exertional rhabdomyolysis syndrome in horses, that clustered based on patterns of clinical signs, indicating potential novel subtypes of the disease.'
 date: 2024-07-05
 venue: 'Equine Veterinary Journal'
 paperurl: 'https://dx.doi.org/10.1111/evj.14128'

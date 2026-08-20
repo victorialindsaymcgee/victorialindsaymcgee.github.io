@@ -3,7 +3,7 @@ title: "Why equestrians use auxiliary reins on horses, their biomechanical perce
 collection: publications
 category: manuscripts
 permalink: /publication/2025-06-12-tapuska-auxiliary
-excerpt: 'This paper found that 60% of respodnents had or would use auxiliary reins, and these equestrians had signifcantly lower biomechanical knowledge test scores than those who no longer used them. Social influence and lack of physical riding or training skills were primary drivers for use.'
+excerpt: 'This paper found that 60% of respondents had or would use auxiliary reins, and these equestrians had significantly lower biomechanical knowledge test scores than those who no longer used them. Social influence and lack of physical riding or training skills were primary drivers for use.'
 date: 2025-06-12
 venue: 'Journal of Equine Rehabilitation'
 paperurl: 'https://doi.org/10.1016/j.eqre.2025.100032'
