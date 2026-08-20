@@ -9,6 +9,20 @@ redirect_from:
 
 {% include base_path %}
 
+Background
+------------------------------------------
+
+My research has its roots in equine industry practice. I completed a BA(Hons) in Preclinical Veterinary Studies with Natural Sciences at the University of Cambridge in 2012, before working with the Scottish SPCA and establishing my own business as an equine thermographer. I continued this work alongside an MSc in Equine Science at the University of Edinburgh, graduating in 2017. My MSc research investigated infrared thermography as a potential diagnostic tool for equine myopathies, leading to a continuing interest in equine muscle disease and exercise physiology.
+
+I subsequently completed an MSc in Instrumental Analytical Science at Robert Gordon University, graduating with Distinction in 2018 and specialising in DNA analysis, proteomics and metabolomics. As part of an Erasmus traineeship at the Universidade do Minho in Braga, Portugal, I investigated the role of antioxidant genes in a rapeseed pomace extract treatment for human neurodegenerative disease using *C. elegans* models. This provided a foundation in molecular genetics and experimental approaches that I later applied to equine disease.
+
+I then completed a PhD at the Royal Veterinary College investigating the genomic architecture of equine exertional rhabdomyolysis (“tying-up”), funded by the RVC’s Mellon Fund for Equine Research and supervised by [Dr Androniki Psifidi](https://www.rvc.ac.uk/about/our-people/androniki-psifidi), [Professor Richard Piercy](https://www.rvc.ac.uk/about/our-people/richard-piercy) and [Dr Emily Clark](https://orcid.org/0000-0002-9550-7407). My doctoral research combined clinical phenotyping, statistical analysis and genomic approaches to investigate the biological and genetic heterogeneity underlying these complex muscle disorders. I was awarded the 2023 RVC McKeever Prize for the Graduating PhD Student with the Best Original Research Paper.
+
+Since 2022 I have been based at the [Royal (Dick) School of Veterinary Studies](https://vet.ed.ac.uk) at the University of Edinburgh, where I coordinate the [Equine Science MSc](https://vet.ed.ac.uk/studying/postgraduate/taught-programmes/msc-equine-science) programme and serve as a Teaching Fellow in [BVM&S](https://vet.ed.ac.uk/education/undergraduate) Horse Husbandry. This role has allowed me to combine my research background with a deepening commitment to teaching and programme leadership. I am currently completing a Postgraduate Certificate in Academic Practice (expected 2027), and I am co-supervisor on an EastBio Doctoral Training Programme studentship funded from 2025. My research interests continue to develop around equine genomics, veterinary data science, and the translation of genomic approaches into equine clinical and breeding contexts.
+
+I am also a Royal Statistical Society accredited Data Analyst, reflecting my interest in combining biological and veterinary expertise with rigorous quantitative approaches.
+
+
 Qualifications
 ======
 * BA<sub>(Hons)</sub> Upper Second Class in Preclinical Veterinary Studies with Natural Sciences - University of Cambridge, 2012
@@ -67,7 +81,7 @@ Service and leadership
 * Organising Committee member for the [2025](https://www.bsas.org.uk/events/article/bsas-equine-conference-2025) and 2027 BSAS Equine Conference
 * Organising Committee member for the 2024 Edinburgh Next Generation of Genomics Symposium (ENGoGS)
 * Member of the [British Society of Animal Science](https://www.bsas.org.uk) and member of the Judging Panel for the [BSAS Undergraduate Thesis of the Year Award](https://www.bsas.org.uk/undergraduates-and-early-career/thesis-of-the-year/). Previously member of the [Early Career Council](https://www.bsas.org.uk/undergraduates-and-early-career/council-members/) (2019-2026) and Early Careers Rep on the BSAS Publications Committee.
-* BISAS member of the  [*animal*](https://animal-journal.eu/) journal family management board as of 2026
+* BISAS member of the  [animal](https://animal-journal.eu/) journal family management board as of 2026
 * Reviewer for the R(D)SVS Veterinary Ethical Review Committee
 * Member of the R(D)SVS AI Working Group
 * Member of the R(D)SVS PGT Teaching & Learning Committee
@@ -103,5 +117,5 @@ Personal
 ======
 
 * I have been a keen horse rider since I was a child, competing in eventing and affiliated dressage as well as taking part in common ridings. In 2014-15 I stabled my horse at a professional event rider’s yard where I would occasionally assist with handling and exercising fit 4* event horses.
-* I am a qualified rugby referee, refereeing age grade and adult 15s and 7s in the Scottish Borders for the Borders Rugby Referees Society, and assistant refereeing at national league amateur fixtures. Refereeing at this level requires coaching skills and the ability to manage people and make decisions in a fast-paced and high adrenaline situation. I also act as the Secretary for the Borders Rugby Referees Society. In 2025 I was awarded the National Community Match Official of the Season Award by Scottish Rugby.
+* I am a qualified rugby referee, refereeing age grade and adult 15s and 7s in the Scottish Borders for the Borders Rugby Referees Society, and assistant refereeing at national league amateur fixtures. Refereeing at this level requires coaching skills and the ability to manage people and make decisions in a fast-paced and high adrenaline situation. I also acted as the Secretary for the Borders Rugby Referees Society from 2023-2026. In 2025 I was awarded the National Community Match Official of the Season Award by Scottish Rugby.
 
