@@ -31,9 +31,9 @@ Qualifications
 * PhD titled 'Dissecting the genetic architecture of equine exertional rhabdomyolysis' - Royal Veterinary College, 2023 (Winner of the 2023 RVC McKeever Prize for Best Original Research)
 * Postgraduate Certificate in Academic Practice - University of Edinburgh, 2027 (Expected)
 
-Work experience
+Employment
 ======
-* Aug 2022 - present: Royal (Dick) School of Veterinary Studies, University of Edinburgh
+* Aug 2022 - 2022: Royal (Dick) School of Veterinary Studies, University of Edinburgh
   * Position: Programme Coordinator for MSc Equine Science and BVM&S Horse Husbandry Teaching Fellow
 
 * Oct 2018 – Nov 2022: Royal Veterinary College
