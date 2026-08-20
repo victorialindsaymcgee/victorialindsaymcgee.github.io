@@ -11,23 +11,23 @@ main:
   - title: "Updates"
     url: /year-archive/
 
+  - title: "Teaching"
+    url: /teaching/   
+
+  - title: "Research"
+    url: /portfolio/
+
   - title: "Publications"
     url: /publications/
 
   - title: "Conferences"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-
-  - title: "Projects"
-    url: /portfolio/
-    
-  - title: "CV"
-    url: /cv/
+    url: /talks/     
 
   - title: "Open Educational Resources"
     url: /oer/
+
+  - title: "CV"
+    url: /cv/
   
   # - title: "CV"
   #   url: /cv-json/
