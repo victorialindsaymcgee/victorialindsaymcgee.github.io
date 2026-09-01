@@ -1,0 +1,25 @@
+---
+title: "Equine GWAS Atlas: a systematic review of robustness, reproducibility and data availability across equine genome-wide association studies with cross-phenotype synthesis"
+excerpt: "Ongoing: Principal Investigator"
+date: 2026-09-01
+collection: portfolio
+category: projects
+---
+
+Genome-wide association studies (GWAS) in the domestic horse have been 
+conducted across diverse breeds, phenotypes, sample sizes and genotyping 
+platforms, yet the methodological robustness, data openness and 
+reproducibility of this literature have not been systematically evaluated. 
+This project will produce a systematic evidence map of equine GWAS, an 
+assessment of methodological quality and data reusability, and a 
+cross-phenotype synthesis identifying shared loci, genes and biological 
+pathways. Findings will be accompanied by a publicly available, versioned 
+database — the Equine GWAS Atlas.
+
+| Resource | Status |
+|---|---|
+| OSF pre-registration | In preparation |
+| Protocol manuscript | In preparation |
+| Zenodo protocol deposit | In preparation |
+| GitHub repository | In preparation |
+| Data dictionary | In preparation |
