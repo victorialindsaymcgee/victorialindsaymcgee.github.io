@@ -22,6 +22,6 @@ database — the Equine GWAS Atlas.
 |---|---|
 | OSF pre-registration | In preparation |
 | Protocol manuscript | In preparation |
-| Zenodo protocol deposit | In preparation |
+| Zenodo deposit | [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22256993-blue)](https://doi.org/10.5281/zenodo.22256993) |
 | GitHub repository | [equine-gwas-atlas](https://github.com/victorialindsaymcgee/equine-gwas-atlas) |
 | Data dictionary | In preparation |
