@@ -27,6 +27,7 @@ database — the Equine GWAS Atlas.
 
 | Resource | Status |
 |---|---|
+| Overall project | Piloting data extraction |
 | OSF pre-registration | In preparation |
 | Protocol manuscript | In preparation |
 | Zenodo deposit | [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22256993-blue)](https://doi.org/10.5281/zenodo.22256993) |
