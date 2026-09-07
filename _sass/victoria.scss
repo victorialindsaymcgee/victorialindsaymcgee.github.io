@@ -1,6 +1,6 @@
 /* ==========================================================================
    VICTORIA LINDSAY MCGEE — SITE CUSTOMISATION
-   A light-touch visual refresh for AcademicPages.
+   Light-touch visual refresh for AcademicPages.
    ========================================================================== */
 
 
@@ -60,10 +60,7 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
-  font-weight: 650;
-}
-
+h2,
 h3,
 h4,
 h5,
@@ -160,16 +157,23 @@ a {
       color: var(--victoria-green-dark);
     }
   }
-
-  img {
-    border-radius: 6px;
-  }
 }
 
 
 /* --------------------------------------------------------------------------
    Author profile
+   Keep the classic AcademicPages oval portrait, with a softer frame.
    -------------------------------------------------------------------------- */
+
+.author__avatar {
+  img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow:
+      0 0 0 1px var(--victoria-border),
+      0 4px 12px rgba(53, 74, 59, 0.12);
+  }
+}
 
 .author__name {
   color: var(--victoria-green-dark);
@@ -307,73 +311,6 @@ code {
 }
 
 
-/* --------------------------------------------------------------------------
-   Publication / archive items
-   -------------------------------------------------------------------------- */
-
-.archive__item {
-  border-bottom: 1px solid var(--victoria-border);
-  padding-bottom: 1.25em;
-  margin-bottom: 1.5em;
-}
-
-.archive__item-title {
-  color: var(--victoria-green-dark);
-
-  a {
-    color: inherit;
-
-    &:hover {
-      color: var(--victoria-green);
-    }
-  }
-}
-
-
-/* --------------------------------------------------------------------------
-   Metadata
-   -------------------------------------------------------------------------- */
-
-.page__meta,
-.archive__item-excerpt,
-.archive__item-teaser {
-  color: var(--victoria-muted);
-}
-
-
-/* --------------------------------------------------------------------------
-   Footer
-   -------------------------------------------------------------------------- */
-
-.page__footer {
-  background: var(--victoria-background);
-  border-top: 1px solid var(--victoria-border);
-  color: var(--victoria-muted);
-
-  a {
-    color: var(--victoria-green);
-
-    &:hover {
-      color: var(--victoria-green-dark);
-    }
-  }
-}
-
-
-/* --------------------------------------------------------------------------
-   Subtle focus treatment
-   -------------------------------------------------------------------------- */
-
-a:focus,
-button:focus,
-input:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid rgba(73, 98, 79, 0.28);
-  outline-offset: 2px;
-}
-
-
 /* ==========================================================================
    CONTENT HIGHLIGHTS
    Green = Research
@@ -383,7 +320,7 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   Base highlight style
+   Base highlight
    -------------------------------------------------------------------------- */
 
 .v-highlight {
@@ -494,20 +431,6 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   Small label
-   -------------------------------------------------------------------------- */
-
-.v-highlight__label {
-  display: inline-block;
-  margin-bottom: 0.4em;
-  font-size: 0.72em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-
-/* --------------------------------------------------------------------------
    Compact highlight
    -------------------------------------------------------------------------- */
 
@@ -518,8 +441,17 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   Label colours
+   Optional small label
    -------------------------------------------------------------------------- */
+
+.v-highlight__label {
+  display: inline-block;
+  margin-bottom: 0.4em;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 
 .v-research .v-highlight__label {
   color: var(--victoria-green);
@@ -536,13 +468,6 @@ select:focus {
 
 /* ==========================================================================
    ACADEMICPAGES COLLECTION HIGHLIGHTS
-   These classes are applied when a collection item contains:
-   
-     highlight: research
-     highlight: teaching
-     highlight: award
-   
-   in its front matter.
    ========================================================================== */
 
 
@@ -557,13 +482,11 @@ select:focus {
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
 
-  .archive__item-title {
-    a {
-      color: var(--victoria-green-dark);
+  .archive__item-title a {
+    color: var(--victoria-green-dark);
 
-      &:hover {
-        color: var(--victoria-green);
-      }
+    &:hover {
+      color: var(--victoria-green);
     }
   }
 }
@@ -580,13 +503,11 @@ select:focus {
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
 
-  .archive__item-title {
-    a {
-      color: var(--victoria-blue-dark);
+  .archive__item-title a {
+    color: var(--victoria-blue-dark);
 
-      &:hover {
-        color: var(--victoria-blue);
-      }
+    &:hover {
+      color: var(--victoria-blue);
     }
   }
 }
@@ -603,15 +524,29 @@ select:focus {
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
 
-  .archive__item-title {
-    a {
-      color: var(--victoria-gold-dark);
+  .archive__item-title a {
+    color: var(--victoria-gold-dark);
 
-      &:hover {
-        color: var(--victoria-gold);
-      }
+    &:hover {
+      color: var(--victoria-gold);
     }
   }
+}
+
+
+/* ==========================================================================
+   CONFERENCE HEADER IMAGE
+   Soft framed treatment for the image on the Conferences page.
+   ========================================================================== */
+
+.conference-header-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--victoria-border);
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(53, 74, 59, 0.10);
 }
 
 
