@@ -1,308 +1,270 @@
-<div class="gwas-atlas-data"> <div class="gwas-atlas-data__intro"> <p class="gwas-atlas-data__eyebrow">EQUINE GWAS ATLAS</p>
-<h1>Data</h1>
+<div class="gwas-atlas-data">
+
+  <div class="gwas-atlas-data__intro">
 
-<p class="gwas-atlas-data__lead">
-Explore the evidence collected in the Equine GWAS Atlas,
-organised at three linked levels: publications, studies and loci.
-</p>
-</div> <div class="gwas-atlas-data__model" aria-label="Atlas data structure">
-<div class="gwas-atlas-data__model-item publication">
-<span class="gwas-atlas-data__number">01</span>
+    <a
+      class="gwas-atlas-data__back"
+      href="{{ '/portfolio/2026-equine-gwas-atlas/' | relative_url }}"
+    >
+      ← Back to the Equine GWAS Atlas
+    </a>
+
+    <p class="gwas-atlas-data__eyebrow">
+      EQUINE GWAS ATLAS
+    </p>
+
+    <h1>Data Explorer</h1>
 
-<div>
-<h2>Publication</h2>
+    <p class="gwas-atlas-data__lead">
+      Explore the publications, studies and genomic loci collected in the
+      Equine GWAS Atlas.
+    </p>
+
+  </div>
+
+
+  <section class="gwas-atlas-data__explorer">
+
+    <div class="gwas-atlas-data__explorer-heading">
+
+      <div>
+        <p class="gwas-atlas-data__eyebrow">
+          ATLAS DATA
+        </p>
 
-<p>
-Information about the publication and its reporting,
-transparency and other publication-level characteristics.
-</p>
-</div>
-</div>
+        <h2>Explore the data</h2>
+      </div>
 
+      <a
+        href="https://github.com/victorialindsaymcgee/equine-gwas-atlas"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="gwas-atlas-data__github"
+      >
+        View GitHub repository ↗
+      </a>
 
-<div class="gwas-atlas-data__arrow" aria-hidden="true">
-→
-</div>
-
-
-<div class="gwas-atlas-data__model-item study">
-<span class="gwas-atlas-data__number">02</span>
-
-<div>
-<h2>Study</h2>
+    </div>
 
-<p>
-Characteristics and methodology of individual GWAS analyses
-reported within publications.
-</p>
-</div>
-</div>
-
-
-<div class="gwas-atlas-data__arrow" aria-hidden="true">
-→
-</div>
-
-
-<div class="gwas-atlas-data__model-item locus">
-<span class="gwas-atlas-data__number">03</span>
-
-<div>
-<h2>Locus</h2>
-
-<p>
-Reported genomic loci and the evidence and annotation associated
-with them.
-</p>
-</div>
-</div>
-</div> <section class="gwas-atlas-data__explorer">
-<div class="gwas-atlas-data__explorer-heading">
 
-<div>
-<p class="gwas-atlas-data__eyebrow">DATA EXPLORER</p>
-
-<h2>Explore the Atlas</h2>
-</div>
-
-<a
-href="https://github.com/victorialindsaymcgee/equine-gwas-atlas"
-target="_blank"
-rel="noopener noreferrer"
-class="gwas-atlas-data__github"
->
-View GitHub repository ↗
-</a>
+    <div
+      class="gwas-atlas-data__provenance"
+      role="note"
+    >
 
-</div>
+      <div
+        class="gwas-atlas-data__provenance-icon"
+        aria-hidden="true"
+      >
+        ↗
+      </div>
 
+      <div>
+
+        <strong>Data source</strong>
 
-<div
-class="gwas-atlas-data__provenance"
-role="note"
->
+        <p>
+          The Equine GWAS Atlas dataset is maintained in the project
+          GitHub repository. The tables displayed here are loaded
+          directly from the repository, which remains the canonical
+          source of the data.
+        </p>
 
-<div class="gwas-atlas-data__provenance-icon" aria-hidden="true">
-↗
-</div>
+        <a
+          href="https://github.com/victorialindsaymcgee/equine-gwas-atlas"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View dataset on GitHub →
+        </a>
 
-<div>
-
-<strong>Data source</strong>
-
-<p>
-The Equine GWAS Atlas dataset is maintained in the
-project GitHub repository. The tables displayed here are
-loaded directly from the repository and may be updated as
-the Atlas develops.
-</p>
+      </div>
 
-<a
-href="https://github.com/victorialindsaymcgee/equine-gwas-atlas"
-target="_blank"
-rel="noopener noreferrer"
->
-View dataset on GitHub →
-</a>
+    </div>
 
-</div>
 
-</div>
+    <div
+      class="gwas-atlas-data__tabs"
+      role="tablist"
+      aria-label="Atlas data tables"
+    >
 
+      <button
+        class="gwas-atlas-data__tab is-active"
+        type="button"
+        role="tab"
+        aria-selected="true"
+        data-dataset="publications"
+      >
+        <span>01</span>
+        Publications
+      </button>
 
-<div
-class="gwas-atlas-data__tabs"
-role="tablist"
-aria-label="Atlas data tables"
->
 
-<button
-class="gwas-atlas-data__tab is-active"
-type="button"
-role="tab"
-aria-selected="true"
-data-dataset="publications"
->
-<span>01</span>
-Publications
-</button>
+      <button
+        class="gwas-atlas-data__tab"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-dataset="studies"
+      >
+        <span>02</span>
+        Studies
+      </button>
 
 
-<button
-class="gwas-atlas-data__tab"
-type="button"
-role="tab"
-aria-selected="false"
-data-dataset="studies"
->
-<span>02</span>
-Studies
-</button>
+      <button
+        class="gwas-atlas-data__tab"
+        type="button"
+        role="tab"
+        aria-selected="false"
+        data-dataset="loci"
+      >
+        <span>03</span>
+        Loci
+      </button>
 
+    </div>
 
-<button
-class="gwas-atlas-data__tab"
-type="button"
-role="tab"
-aria-selected="false"
-data-dataset="loci"
->
-<span>03</span>
-Loci
-</button>
 
-</div>
+    <div class="gwas-atlas-data__dataset-header">
 
+      <div>
 
-<div class="gwas-atlas-data__dataset-header">
+        <h3 id="gwas-atlas-dataset-title">
+          Publications
+        </h3>
 
-<div>
+        <p id="gwas-atlas-dataset-description">
+          Publication-level information from the Equine GWAS Atlas.
+        </p>
 
-<h3 id="gwas-atlas-dataset-title">
-Publications
-</h3>
+      </div>
 
-<p id="gwas-atlas-dataset-description">
-Publication-level information from the Equine GWAS Atlas.
-</p>
 
-</div>
+      <div class="gwas-atlas-data__dataset-actions">
 
+        <span
+          id="gwas-atlas-count"
+          class="gwas-atlas-data__count"
+          aria-live="polite"
+        >
+          Loading…
+        </span>
 
-<div class="gwas-atlas-data__dataset-actions">
+        <a
+          id="gwas-atlas-download"
+          class="gwas-atlas-data__download"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CSV ↓
+        </a>
 
-<span
-id="gwas-atlas-count"
-class="gwas-atlas-data__count"
-aria-live="polite"
->
-Loading…
-</span>
+      </div>
 
+    </div>
 
-<a
-id="gwas-atlas-download"
-class="gwas-atlas-data__download"
-href="#"
-target="_blank"
-rel="noopener noreferrer"
->
-CSV ↓
-</a>
 
-</div>
+    <div class="gwas-atlas-data__controls">
 
-</div>
+      <label
+        for="gwas-atlas-search"
+        class="gwas-atlas-data__search"
+      >
 
+        <span>Search</span>
 
-<div class="gwas-atlas-data__controls">
+        <input
+          id="gwas-atlas-search"
+          type="search"
+          placeholder="Search this dataset…"
+          autocomplete="off"
+        >
 
-<label
-for="gwas-atlas-search"
-class="gwas-atlas-data__search"
->
+      </label>
 
-<span>Search</span>
 
-<input
-id="gwas-atlas-search"
-type="search"
-placeholder="Search this dataset…"
-autocomplete="off"
->
+      <button
+        id="gwas-atlas-clear"
+        type="button"
+        class="gwas-atlas-data__clear"
+      >
+        Clear
+      </button>
 
-</label>
+    </div>
 
 
-<button
-id="gwas-atlas-clear"
-type="button"
-class="gwas-atlas-data__clear"
->
-Clear
-</button>
+    <p
+      id="gwas-atlas-status"
+      class="gwas-atlas-data__status"
+      aria-live="polite"
+    >
+      Loading dataset…
+    </p>
 
-</div>
 
+    <div
+      id="gwas-atlas-table-container"
+      class="gwas-atlas-data__table-container"
+    >
 
-<p
-id="gwas-atlas-status"
-class="gwas-atlas-data__status"
-aria-live="polite"
->
-Loading dataset…
-</p>
+      <table
+        id="gwas-atlas-table"
+        class="gwas-atlas-data__table"
+      >
 
+        <thead></thead>
 
-<div
-id="gwas-atlas-table-container"
-class="gwas-atlas-data__table-container"
->
+        <tbody></tbody>
 
-<table
-id="gwas-atlas-table"
-class="gwas-atlas-data__table"
->
+      </table>
 
-<thead></thead>
+    </div>
 
-<tbody></tbody>
 
-</table>
+    <div
+      id="gwas-atlas-empty"
+      class="gwas-atlas-data__empty"
+      hidden
+    >
 
-</div>
+      <div
+        class="gwas-atlas-data__empty-symbol"
+        aria-hidden="true"
+      >
+        ◎
+      </div>
 
+      <h3>No records available</h3>
 
-<div
-id="gwas-atlas-empty"
-class="gwas-atlas-data__empty"
-hidden
->
+      <p id="gwas-atlas-empty-message">
+        This dataset has not yet been populated.
+      </p>
 
-<div
-class="gwas-atlas-data__empty-symbol"
-aria-hidden="true"
->
-◎
-</div>
+    </div>
 
-<h3>No records available</h3>
+  </section>
 
-<p id="gwas-atlas-empty-message">
-This dataset has not yet been populated.
-</p>
+
+  <div class="gwas-atlas-data__footer-links">
+
+    <a
+      href="{{ '/portfolio/2026-equine-gwas-atlas/' | relative_url }}"
+    >
+      ← About the Equine GWAS Atlas
+    </a>
+
+    <a
+      href="https://github.com/victorialindsaymcgee/equine-gwas-atlas"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub repository ↗
+    </a>
+
+  </div>
 
 </div>
-</section> <div class="gwas-atlas-data__notes">
-<div>
-
-<p class="gwas-atlas-data__eyebrow">
-ABOUT THE DATA
-</p>
-
-<p>
-The Atlas data are maintained in the project repository.
-This page provides a public interface for exploring the
-structured data without creating a separate copy of the
-dataset on this website.
-</p>
-
-</div>
-
-
-<div class="gwas-atlas-data__links">
-
-<a href="/portfolio/2026-equine-gwas-atlas/">
-About the project
-</a>
-
-<a
-href="https://github.com/victorialindsaymcgee/equine-gwas-atlas"
-target="_blank"
-rel="noopener noreferrer"
->
-GitHub
-</a>
-
-</div>
-</div> </div>

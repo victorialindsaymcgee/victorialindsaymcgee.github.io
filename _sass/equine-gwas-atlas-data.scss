@@ -1,0 +1,664 @@
+/*
+ * Equine GWAS Atlas — Data Explorer
+ *
+ * The website provides the interface only.
+ * GitHub is the canonical source of the datasets.
+ *
+ * All styles are scoped to .gwas-atlas-data.
+ */
+
+.gwas-atlas-data {
+
+  --atlas-green: #49624f;
+  --atlas-green-dark: #354a3b;
+  --atlas-green-light: #edf2ee;
+
+  --atlas-blue: #58717d;
+  --atlas-blue-light: #edf2f4;
+
+  --atlas-gold: #987946;
+  --atlas-gold-light: #f5f1e8;
+
+  --atlas-text: #303633;
+  --atlas-muted: #68716c;
+
+  --atlas-border: #d9dfdb;
+  --atlas-border-dark: #c5cec8;
+
+  --atlas-background: #f7f8f7;
+
+
+  /*
+   * Intro
+   */
+
+  &__intro {
+    max-width: 850px;
+    margin-bottom: 2.25rem;
+  }
+
+
+  &__back {
+    display: inline-block;
+
+    margin-bottom: 1.25rem;
+
+    color: var(--atlas-green) !important;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    text-decoration: none !important;
+  }
+
+
+  &__back:hover {
+    color: var(--atlas-green-dark) !important;
+    text-decoration: underline !important;
+  }
+
+
+  &__eyebrow {
+    margin: 0 0 0.4rem;
+
+    color: var(--atlas-green);
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+
+  &__intro h1 {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+  }
+
+
+  &__lead {
+    max-width: 760px;
+
+    margin: 0;
+
+    color: var(--atlas-muted);
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+
+  /*
+   * Explorer
+   */
+
+  &__explorer {
+    margin-bottom: 2rem;
+  }
+
+
+  &__explorer-heading {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin-bottom: 1.2rem;
+  }
+
+
+  &__explorer-heading h2 {
+    margin: 0;
+
+    font-size: 1.4rem;
+  }
+
+
+  &__github {
+    color: var(--atlas-green) !important;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    text-decoration: none !important;
+  }
+
+
+  &__github:hover {
+    color: var(--atlas-green-dark) !important;
+  }
+
+
+  /*
+   * Data provenance
+   */
+
+  &__provenance {
+    display: flex;
+
+    gap: 0.9rem;
+
+    margin-bottom: 1.5rem;
+
+    padding: 1rem 1.1rem;
+
+    border-left: 3px solid var(--atlas-green);
+
+    background: var(--atlas-green-light);
+  }
+
+
+  &__provenance-icon {
+    display: flex;
+
+    flex: 0 0 auto;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 1.8rem;
+    height: 1.8rem;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: var(--atlas-green);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+
+  &__provenance strong {
+    display: block;
+
+    margin-bottom: 0.2rem;
+
+    color: var(--atlas-green-dark);
+
+    font-size: 0.78rem;
+  }
+
+
+  &__provenance p {
+    max-width: 760px;
+
+    margin: 0 0 0.35rem;
+
+    color: var(--atlas-text);
+
+    font-size: 0.76rem;
+    line-height: 1.5;
+  }
+
+
+  &__provenance a {
+    color: var(--atlas-green) !important;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    text-decoration: none !important;
+  }
+
+
+  /*
+   * Tabs
+   */
+
+  &__tabs {
+    display: flex;
+
+    margin-bottom: 1.4rem;
+
+    border-bottom: 1px solid var(--atlas-border);
+  }
+
+
+  &__tab {
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.55rem;
+
+    margin: 0;
+
+    padding: 0.8rem 1rem;
+
+    border: 0;
+    border-bottom: 3px solid transparent;
+
+    background: transparent;
+
+    color: var(--atlas-muted);
+
+    cursor: pointer;
+
+    font: inherit;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+
+  &__tab span {
+    color: #9aa29d;
+
+    font-size: 0.63rem;
+    font-weight: 700;
+  }
+
+
+  &__tab:hover {
+    color: var(--atlas-green);
+  }
+
+
+  &__tab.is-active {
+    border-bottom-color: var(--atlas-green);
+
+    color: var(--atlas-green);
+  }
+
+
+  /*
+   * Dataset heading
+   */
+
+  &__dataset-header {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 1.5rem;
+
+    margin-bottom: 1rem;
+  }
+
+
+  &__dataset-header h3 {
+    margin: 0 0 0.25rem;
+
+    font-size: 1rem;
+  }
+
+
+  &__dataset-header p {
+    margin: 0;
+
+    color: var(--atlas-muted);
+
+    font-size: 0.78rem;
+  }
+
+
+  &__dataset-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-shrink: 0;
+  }
+
+
+  &__count {
+    color: var(--atlas-muted);
+
+    font-size: 0.72rem;
+
+    white-space: nowrap;
+  }
+
+
+  &__download {
+    padding: 0.5rem 0.7rem;
+
+    border: 1px solid var(--atlas-border);
+    border-radius: 3px;
+
+    color: var(--atlas-green) !important;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    text-decoration: none !important;
+  }
+
+
+  &__download:hover {
+    border-color: var(--atlas-green);
+
+    background: var(--atlas-green-light);
+  }
+
+
+  /*
+   * Search
+   */
+
+  &__controls {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 0.7rem;
+
+    margin-bottom: 0.5rem;
+  }
+
+
+  &__search {
+    flex: 1;
+
+    max-width: 560px;
+  }
+
+
+  &__search span {
+    display: block;
+
+    margin-bottom: 0.3rem;
+
+    color: var(--atlas-muted);
+
+    font-size: 0.68rem;
+    font-weight: 600;
+  }
+
+
+  &__search input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 0.62rem 0.7rem;
+
+    border: 1px solid var(--atlas-border);
+    border-radius: 3px;
+
+    background: #fff;
+
+    font: inherit;
+    font-size: 0.8rem;
+  }
+
+
+  &__search input:focus {
+    border-color: var(--atlas-green);
+
+    outline: 2px solid rgba(73, 98, 79, 0.12);
+  }
+
+
+  &__clear {
+    padding: 0.6rem 0.7rem;
+
+    border: 1px solid var(--atlas-border);
+    border-radius: 3px;
+
+    background: #fff;
+
+    color: var(--atlas-muted);
+
+    cursor: pointer;
+
+    font: inherit;
+    font-size: 0.73rem;
+  }
+
+
+  &__clear:hover {
+    border-color: var(--atlas-green);
+
+    color: var(--atlas-green);
+  }
+
+
+  /*
+   * Status
+   */
+
+  &__status {
+    min-height: 1.15rem;
+
+    margin-bottom: 0.5rem;
+
+    color: var(--atlas-muted);
+
+    font-size: 0.7rem;
+  }
+
+
+  &__status.is-error {
+    color: #963f36;
+  }
+
+
+  /*
+   * Table
+   */
+
+  &__table-container {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid var(--atlas-border);
+
+    background: #fff;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+
+  &__table {
+    width: 100%;
+
+    min-width: 900px;
+
+    margin: 0;
+
+    border-collapse: collapse;
+
+    font-size: 0.73rem;
+  }
+
+
+  &__table th {
+    position: sticky;
+
+    top: 0;
+
+    padding: 0.7rem;
+
+    border-bottom: 2px solid var(--atlas-green);
+
+    background: var(--atlas-background);
+
+    color: var(--atlas-green-dark);
+
+    font-size: 0.67rem;
+    font-weight: 700;
+
+    text-align: left;
+
+    white-space: nowrap;
+  }
+
+
+  &__table td {
+    max-width: 420px;
+
+    padding: 0.65rem 0.7rem;
+
+    border-bottom: 1px solid #e8ece9;
+
+    color: var(--atlas-text);
+
+    vertical-align: top;
+
+    line-height: 1.45;
+  }
+
+
+  &__table tbody tr:hover {
+    background: #fafcfb;
+  }
+
+
+  /*
+   * Empty state
+   */
+
+  &__empty {
+    padding: 3rem 1.5rem;
+
+    border: 1px dashed var(--atlas-border);
+
+    background: var(--atlas-background);
+
+    text-align: center;
+  }
+
+
+  &__empty-symbol {
+    margin-bottom: 0.4rem;
+
+    color: var(--atlas-green);
+
+    font-size: 2rem;
+  }
+
+
+  &__empty h3 {
+    margin: 0 0 0.4rem;
+
+    font-size: 1.05rem;
+  }
+
+
+  &__empty p {
+    max-width: 560px;
+
+    margin: 0 auto;
+
+    color: var(--atlas-muted);
+
+    font-size: 0.8rem;
+
+    line-height: 1.6;
+  }
+
+
+  /*
+   * Bottom links
+   */
+
+  &__footer-links {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding-top: 1.25rem;
+
+    border-top: 1px solid var(--atlas-border);
+  }
+
+
+  &__footer-links a {
+    color: var(--atlas-green) !important;
+
+    font-size: 0.76rem;
+    font-weight: 600;
+
+    text-decoration: none !important;
+  }
+
+
+  &__footer-links a:hover {
+    color: var(--atlas-green-dark) !important;
+
+    text-decoration: underline !important;
+  }
+
+
+  /*
+   * Mobile
+   */
+
+  @media screen and (max-width: 760px) {
+
+    &__explorer-heading {
+      display: block;
+    }
+
+
+    &__github {
+      display: inline-block;
+
+      margin-top: 0.5rem;
+    }
+
+
+    &__tabs {
+      overflow-x: auto;
+
+      white-space: nowrap;
+    }
+
+
+    &__tab {
+      flex-shrink: 0;
+    }
+
+
+    &__dataset-header {
+      display: block;
+    }
+
+
+    &__dataset-actions {
+      margin-top: 0.7rem;
+
+      justify-content: space-between;
+    }
+
+
+    &__controls {
+      display: block;
+    }
+
+
+    &__search {
+      max-width: none;
+    }
+
+
+    &__clear {
+      margin-top: 0.5rem;
+    }
+
+
+    &__footer-links {
+      display: block;
+    }
+
+
+    &__footer-links a {
+      display: block;
+
+      margin-bottom: 0.5rem;
+    }
+
+  }
+
+}
