@@ -8,6 +8,15 @@ category: projects
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22256993-blue)](https://doi.org/10.5281/zenodo.22256993)
 
+<div class="v-research">
+  <span class="v-highlight__title">About the Equine GWAS Atlas</span>
+
+  <p>
+    The Equine GWAS Atlas brings together published genome-wide
+    association study results for equine traits.
+  </p>
+</div>
+
 Genome-wide association studies (GWAS) in the domestic horse have been 
 conducted across diverse breeds, phenotypes, sample sizes and genotyping 
 platforms, yet the methodological robustness, data openness and 
