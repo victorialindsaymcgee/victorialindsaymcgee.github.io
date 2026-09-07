@@ -11,11 +11,14 @@ category: projects
 Genome-wide association studies (GWAS) in the domestic horse have been 
 conducted across diverse breeds, phenotypes, sample sizes and genotyping 
 platforms, yet the methodological robustness, data openness and 
-reproducibility of this literature have not been systematically evaluated. 
+reproducibility of this literature have not been systematically evaluated.  
+
 This project will produce a systematic evidence map of equine GWAS, an 
 assessment of methodological quality and data reusability, and a 
 cross-phenotype synthesis identifying shared loci, genes and biological 
-pathways. Findings will be accompanied by a publicly available, versioned 
+pathways.  
+
+Findings will be accompanied by a publicly available, versioned 
 database — the Equine GWAS Atlas.
 
 | Resource | Status |
