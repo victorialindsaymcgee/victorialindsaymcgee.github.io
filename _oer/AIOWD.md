@@ -4,6 +4,7 @@ date: 2026-08-25
 permalink: /oer/ai_owd/
 excerpt: "Example form for AI and Own Work Declaration including a 'Value Added Reflection'."
 highlight: teaching
+author_profile: false
 # layout comes from your collection defaults
 # Optional: tags: [python, seaborn, plotting, visualisation]
 ---
