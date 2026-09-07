@@ -16,7 +16,18 @@ My research has its roots in equine industry practice. I completed a BA(Hons) in
 
 I subsequently completed an MSc in Instrumental Analytical Science at Robert Gordon University, graduating with Distinction in 2018 and specialising in DNA analysis, proteomics and metabolomics. As part of an Erasmus traineeship at the Universidade do Minho in Braga, Portugal, I investigated the role of antioxidant genes in a rapeseed pomace extract treatment for human neurodegenerative disease using *C. elegans* models. This provided a foundation in molecular genetics and experimental approaches that I later applied to equine disease.
 
-I then completed a PhD at the Royal Veterinary College investigating the genomic architecture of equine exertional rhabdomyolysis (“tying-up”), funded by the RVC’s Mellon Fund for Equine Research and supervised by [Dr Androniki Psifidi](https://www.rvc.ac.uk/about/our-people/androniki-psifidi), [Professor Richard Piercy](https://www.rvc.ac.uk/about/our-people/richard-piercy) and [Dr Emily Clark](https://orcid.org/0000-0002-9550-7407). My doctoral research combined clinical phenotyping, statistical analysis and genomic approaches to investigate the biological and genetic heterogeneity underlying these complex muscle disorders. I was awarded the 2023 RVC McKeever Prize for the Graduating PhD Student with the Best Original Research Paper.
+I then completed a PhD at the Royal Veterinary College investigating the genomic architecture of equine exertional rhabdomyolysis (“tying-up”), funded by the RVC’s Mellon Fund for Equine Research and supervised by [Dr Androniki Psifidi](https://www.rvc.ac.uk/about/our-people/androniki-psifidi), [Professor Richard Piercy](https://www.rvc.ac.uk/about/our-people/richard-piercy) and [Dr Emily Clark](https://orcid.org/0000-0002-9550-7407). My doctoral research combined clinical phenotyping, statistical analysis and genomic approaches to investigate the biological and genetic heterogeneity underlying these complex muscle disorders.
+
+<div class="v-award v-highlight--compact">
+  <span class="v-highlight__label">Recognition</span>
+  <span class="v-highlight__title">2023 RVC McKeever Prize</span>
+
+  <p>
+    I was awarded the 2023 RVC McKeever Prize for the Graduating PhD Student
+    with the Best Original Research Paper.
+  </p>
+</div>
+
 
 Since 2022 I have been based at the [Royal (Dick) School of Veterinary Studies](https://vet.ed.ac.uk) at the University of Edinburgh, where I coordinate the [Equine Science MSc](https://vet.ed.ac.uk/studying/postgraduate/taught-programmes/msc-equine-science) programme and serve as a Teaching Fellow in [BVM&S](https://vet.ed.ac.uk/education/undergraduate) Horse Husbandry. This role has allowed me to combine my research background with a deepening commitment to teaching and programme leadership. I am currently completing a Postgraduate Certificate in Academic Practice (expected 2027), and I am co-supervisor on an EastBio Doctoral Training Programme studentship funded from 2025. My research interests continue to develop around equine genomics, veterinary data science, and the translation of genomic approaches into equine clinical and breeding contexts.
 

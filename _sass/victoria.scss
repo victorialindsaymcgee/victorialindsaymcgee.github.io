@@ -3,6 +3,7 @@
    A light-touch visual refresh for AcademicPages.
    ========================================================================== */
 
+
 /* --------------------------------------------------------------------------
    Colour palette
    -------------------------------------------------------------------------- */
@@ -13,9 +14,11 @@
   --victoria-green-light: #edf2ee;
 
   --victoria-blue: #58717d;
+  --victoria-blue-dark: #435a64;
   --victoria-blue-light: #edf2f4;
 
   --victoria-gold: #987946;
+  --victoria-gold-dark: #70572f;
   --victoria-gold-light: #f5f1e8;
 
   --victoria-text: #303633;
@@ -371,29 +374,8 @@ select:focus {
 }
 
 
-
-/* --------------------------------------------------------------------------
-   Mobile
-   -------------------------------------------------------------------------- */
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 1.65em;
-  }
-
-  h2 {
-    font-size: 1.25em;
-  }
-
-  .page__content {
-    h2 {
-      margin-top: 1.8em;
-    }
-  }
-}
-
 /* ==========================================================================
-   VICTORIA — CONTENT HIGHLIGHTS
+   CONTENT HIGHLIGHTS
    Green = Research
    Blue  = Teaching
    Gold  = Awards / Recognition
@@ -401,13 +383,14 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   Base style
+   Base highlight style
    -------------------------------------------------------------------------- */
 
 .v-highlight {
   margin: 1.5em 0;
   padding: 1em 1.25em;
   border-left: 3px solid;
+  border-radius: 0 4px 4px 0;
   color: var(--victoria-text);
 
   p:last-child {
@@ -425,7 +408,7 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   RESEARCH — Green
+   Research — GREEN
    -------------------------------------------------------------------------- */
 
 .v-research {
@@ -450,7 +433,7 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   TEACHING — Blue
+   Teaching — BLUE
    -------------------------------------------------------------------------- */
 
 .v-teaching {
@@ -461,11 +444,11 @@ select:focus {
 
   strong,
   .v-highlight__title {
-    color: #435a64;
+    color: var(--victoria-blue-dark);
   }
 
   a {
-    color: #435a64;
+    color: var(--victoria-blue-dark);
 
     &:hover {
       color: var(--victoria-blue);
@@ -475,7 +458,7 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   AWARDS / RECOGNITION — Gold
+   Awards / Recognition — GOLD
    -------------------------------------------------------------------------- */
 
 .v-award {
@@ -486,11 +469,11 @@ select:focus {
 
   strong,
   .v-highlight__title {
-    color: #70572f;
+    color: var(--victoria-gold-dark);
   }
 
   a {
-    color: #70572f;
+    color: var(--victoria-gold-dark);
 
     &:hover {
       color: var(--victoria-gold);
@@ -511,18 +494,7 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   Compact version
-   Useful for short notices or individual items.
-   -------------------------------------------------------------------------- */
-
-.v-highlight--compact {
-  padding: 0.7em 1em;
-  font-size: 0.95em;
-}
-
-
-/* --------------------------------------------------------------------------
-   Optional small label
+   Small label
    -------------------------------------------------------------------------- */
 
 .v-highlight__label {
@@ -536,7 +508,17 @@ select:focus {
 
 
 /* --------------------------------------------------------------------------
-   Labels inherit the appropriate colour
+   Compact highlight
+   -------------------------------------------------------------------------- */
+
+.v-highlight--compact {
+  padding: 0.7em 1em;
+  font-size: 0.95em;
+}
+
+
+/* --------------------------------------------------------------------------
+   Label colours
    -------------------------------------------------------------------------- */
 
 .v-research .v-highlight__label {
@@ -549,4 +531,117 @@ select:focus {
 
 .v-award .v-highlight__label {
   color: var(--victoria-gold);
+}
+
+
+/* ==========================================================================
+   ACADEMICPAGES COLLECTION HIGHLIGHTS
+   These classes are applied when a collection item contains:
+   
+     highlight: research
+     highlight: teaching
+     highlight: award
+   
+   in its front matter.
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   Research collection item — GREEN
+   -------------------------------------------------------------------------- */
+
+.archive__item--research {
+  background: var(--victoria-green-light);
+  border-left: 3px solid var(--victoria-green);
+  border-radius: 0 4px 4px 0;
+  padding: 1em 1.2em;
+  margin-bottom: 1.5em;
+
+  .archive__item-title {
+    a {
+      color: var(--victoria-green-dark);
+
+      &:hover {
+        color: var(--victoria-green);
+      }
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Teaching collection item — BLUE
+   -------------------------------------------------------------------------- */
+
+.archive__item--teaching {
+  background: var(--victoria-blue-light);
+  border-left: 3px solid var(--victoria-blue);
+  border-radius: 0 4px 4px 0;
+  padding: 1em 1.2em;
+  margin-bottom: 1.5em;
+
+  .archive__item-title {
+    a {
+      color: var(--victoria-blue-dark);
+
+      &:hover {
+        color: var(--victoria-blue);
+      }
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Award collection item — GOLD
+   -------------------------------------------------------------------------- */
+
+.archive__item--award {
+  background: var(--victoria-gold-light);
+  border-left: 3px solid var(--victoria-gold);
+  border-radius: 0 4px 4px 0;
+  padding: 1em 1.2em;
+  margin-bottom: 1.5em;
+
+  .archive__item-title {
+    a {
+      color: var(--victoria-gold-dark);
+
+      &:hover {
+        color: var(--victoria-gold);
+      }
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Mobile
+   -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 1.65em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .page__content {
+    h2 {
+      margin-top: 1.8em;
+    }
+  }
+
+  .v-highlight {
+    padding: 0.9em 1em;
+  }
+
+  .archive__item--research,
+  .archive__item--teaching,
+  .archive__item--award {
+    padding: 0.9em 1em;
+  }
 }
