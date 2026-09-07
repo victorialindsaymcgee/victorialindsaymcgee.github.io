@@ -21,6 +21,10 @@ pathways.
 Findings will be accompanied by a publicly available, versioned 
 database — the Equine GWAS Atlas.
 
+<a class="btn btn--primary" href="/equine-gwas-atlas-data">
+  Go to the Data Explorer
+</a>
+
 | Resource | Status |
 |---|---|
 | OSF pre-registration | In preparation |
