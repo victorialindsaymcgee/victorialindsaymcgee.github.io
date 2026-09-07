@@ -626,11 +626,12 @@ code {
 
 
 /* --------------------------------------------------------------------------
-   GREEN — Research / Publications
+   GREEN — Research / Publications / Conferences
    -------------------------------------------------------------------------- */
 
 .v-page-button--research,
-.v-page-button--publications {
+.v-page-button--publications,
+.v-page-button--conferences {
   border-color: var(--victoria-green);
   background: var(--victoria-green-light);
   color: var(--victoria-green-dark) !important;
@@ -660,10 +661,9 @@ code {
 
 
 /* --------------------------------------------------------------------------
-   GOLD — Conferences / Awards
+   GOLD — Awards / Recognition
    -------------------------------------------------------------------------- */
 
-.v-page-button--conferences,
 .v-page-button--awards {
   border-color: var(--victoria-gold);
   background: var(--victoria-gold-light);
@@ -674,6 +674,7 @@ code {
     border-color: var(--victoria-gold);
   }
 }
+
 
 
 /* --------------------------------------------------------------------------
