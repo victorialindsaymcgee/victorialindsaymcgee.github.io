@@ -26,7 +26,7 @@ author:
   name             : "Victoria Lindsay McGee"
   pronouns         : "she/her"  
   bio              : "Equine geneticist, veterinary data scientist, MSc programme coordinator and teaching fellow."
-  location         : "Edinburgh, UK"
+  location         : #"Edinburgh, UK"
   employer         : "The University of Edinburgh"
   uri              : "https://edwebprofiles.ed.ac.uk/profile/victoria-lindsay"
   email            : "victoria.lindsay-mcgee@ed.ac.uk" 
