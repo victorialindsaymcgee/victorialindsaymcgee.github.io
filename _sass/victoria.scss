@@ -371,6 +371,7 @@ select:focus {
 }
 
 
+
 /* --------------------------------------------------------------------------
    Mobile
    -------------------------------------------------------------------------- */
@@ -389,4 +390,163 @@ select:focus {
       margin-top: 1.8em;
     }
   }
+}
+
+/* ==========================================================================
+   VICTORIA — CONTENT HIGHLIGHTS
+   Green = Research
+   Blue  = Teaching
+   Gold  = Awards / Recognition
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   Base style
+   -------------------------------------------------------------------------- */
+
+.v-highlight {
+  margin: 1.5em 0;
+  padding: 1em 1.25em;
+  border-left: 3px solid;
+  color: var(--victoria-text);
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  a {
+    font-weight: 600;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   RESEARCH — Green
+   -------------------------------------------------------------------------- */
+
+.v-research {
+  @extend .v-highlight;
+
+  background: var(--victoria-green-light);
+  border-left-color: var(--victoria-green);
+
+  strong,
+  .v-highlight__title {
+    color: var(--victoria-green-dark);
+  }
+
+  a {
+    color: var(--victoria-green-dark);
+
+    &:hover {
+      color: var(--victoria-green);
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   TEACHING — Blue
+   -------------------------------------------------------------------------- */
+
+.v-teaching {
+  @extend .v-highlight;
+
+  background: var(--victoria-blue-light);
+  border-left-color: var(--victoria-blue);
+
+  strong,
+  .v-highlight__title {
+    color: #435a64;
+  }
+
+  a {
+    color: #435a64;
+
+    &:hover {
+      color: var(--victoria-blue);
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   AWARDS / RECOGNITION — Gold
+   -------------------------------------------------------------------------- */
+
+.v-award {
+  @extend .v-highlight;
+
+  background: var(--victoria-gold-light);
+  border-left-color: var(--victoria-gold);
+
+  strong,
+  .v-highlight__title {
+    color: #70572f;
+  }
+
+  a {
+    color: #70572f;
+
+    &:hover {
+      color: var(--victoria-gold);
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Highlight title
+   -------------------------------------------------------------------------- */
+
+.v-highlight__title {
+  display: block;
+  margin-bottom: 0.35em;
+  font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------------------
+   Compact version
+   Useful for short notices or individual items.
+   -------------------------------------------------------------------------- */
+
+.v-highlight--compact {
+  padding: 0.7em 1em;
+  font-size: 0.95em;
+}
+
+
+/* --------------------------------------------------------------------------
+   Optional small label
+   -------------------------------------------------------------------------- */
+
+.v-highlight__label {
+  display: inline-block;
+  margin-bottom: 0.4em;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+/* --------------------------------------------------------------------------
+   Labels inherit the appropriate colour
+   -------------------------------------------------------------------------- */
+
+.v-research .v-highlight__label {
+  color: var(--victoria-green);
+}
+
+.v-teaching .v-highlight__label {
+  color: var(--victoria-blue);
+}
+
+.v-award .v-highlight__label {
+  color: var(--victoria-gold);
 }
