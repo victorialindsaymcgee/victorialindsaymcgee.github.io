@@ -1,8 +1,8 @@
 ---
-title: "Equine GWAS Atlas — Data Explorer"
+title: "TEST Equine GWAS Atlas — Data Explorer"
 permalink: /equine-gwas-atlas-data/
 layout: single
-author_profile: false
+author_profile: true
 classes: wide
 ---
 
