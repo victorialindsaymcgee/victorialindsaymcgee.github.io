@@ -1,6 +1,6 @@
 ---
-title: "Equine GWAS Atlas: a systematic review of robustness, reproducibility and data availability across equine genome-wide association studies with cross-phenotype synthesis"
-excerpt: "Ongoing: Principal Investigator"
+title: "Equine GWAS Atlas"
+excerpt: "A systematic review of robustness, reproducibility and data availability across equine genome-wide association studies with cross-phenotype synthesis. Ongoing: Principal Investigator"
 date: 2026-09-01
 collection: portfolio
 category: projects
