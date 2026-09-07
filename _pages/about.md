@@ -29,7 +29,19 @@ My research sits at the intersection of equine genetics and genomics, veterinary
 
 For me, evidence-informed decision-making is not simply about having more data. It involves asking good questions, understanding how evidence has been generated, recognising its strengths and limitations, and considering how — and whether — it should be applied to a particular decision. This perspective runs through both my research and my teaching, and is reflected in my accreditation as a Data Analyst by the Royal Statistical Society.
 
-→ [Research](/portfolio/) | [Teaching](/teaching/) | [Publications](/publications/) | [CV](/cv/)
+<div class="v-page-links">
+
+<a href="/research/" class="v-page-button v-page-button--research">Research</a>
+
+<a href="/publications/" class="v-page-button v-page-button--publications">Publications</a>
+
+<a href="/teaching/" class="v-page-button v-page-button--teaching">Teaching</a>
+
+<a href="/talks/" class="v-page-button v-page-button--conferences">Conferences</a>
+
+<a href="/oer/" class="v-page-button v-page-button--oer">Open Educational Resources</a>
+
+</div>
 
 ---
 
