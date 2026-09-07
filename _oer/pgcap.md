@@ -3,6 +3,7 @@ title: "Getting Comfortable with Graphs in Python seaborn"
 date: 2026-05-03
 permalink: /oer/seaborn-graphs/
 excerpt: "Short intro video, a downloadable Jupyter Notebook, and useful links."
+highlight: teaching
 # layout comes from your collection defaults
 # Optional: tags: [python, seaborn, plotting, visualisation]
 ---
