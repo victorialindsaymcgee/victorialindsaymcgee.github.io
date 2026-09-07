@@ -1,0 +1,392 @@
+/* ==========================================================================
+   VICTORIA LINDSAY MCGEE — SITE CUSTOMISATION
+   A light-touch visual refresh for AcademicPages.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Colour palette
+   -------------------------------------------------------------------------- */
+
+:root {
+  --victoria-green: #49624f;
+  --victoria-green-dark: #354a3b;
+  --victoria-green-light: #edf2ee;
+
+  --victoria-blue: #58717d;
+  --victoria-blue-light: #edf2f4;
+
+  --victoria-gold: #987946;
+  --victoria-gold-light: #f5f1e8;
+
+  --victoria-text: #303633;
+  --victoria-muted: #68716c;
+
+  --victoria-border: #d9dfdb;
+  --victoria-border-dark: #c5cec8;
+
+  --victoria-background: #f7f8f7;
+}
+
+
+/* --------------------------------------------------------------------------
+   Overall page
+   -------------------------------------------------------------------------- */
+
+body {
+  color: var(--victoria-text);
+  background-color: #fff;
+  line-height: 1.65;
+}
+
+
+/* --------------------------------------------------------------------------
+   Typography
+   -------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--victoria-green-dark);
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 650;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 650;
+}
+
+p {
+  line-height: 1.7;
+}
+
+
+/* --------------------------------------------------------------------------
+   Links
+   -------------------------------------------------------------------------- */
+
+a {
+  color: var(--victoria-green);
+
+  &:hover,
+  &:active {
+    color: var(--victoria-green-dark);
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Masthead / top navigation
+   -------------------------------------------------------------------------- */
+
+.masthead {
+  background: rgba(255, 255, 255, 0.97);
+
+  &::after {
+    background: var(--victoria-border);
+  }
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    color: var(--victoria-muted);
+    font-weight: 500;
+
+    &:hover {
+      color: var(--victoria-green);
+    }
+  }
+
+  .visible-links a {
+    &::before {
+      height: 2px;
+      background: var(--victoria-green);
+    }
+  }
+
+  .visible-links li:first-child a {
+    color: var(--victoria-green-dark);
+    font-weight: 700;
+  }
+
+  .hidden-links {
+    border-color: var(--victoria-border);
+    box-shadow: 0 8px 24px rgba(53, 74, 59, 0.10);
+
+    a:hover {
+      color: var(--victoria-green-dark);
+      background: var(--victoria-green-light);
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Sidebar
+   -------------------------------------------------------------------------- */
+
+.sidebar {
+  color: var(--victoria-muted);
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--victoria-green-dark);
+  }
+
+  a {
+    color: var(--victoria-green);
+
+    &:hover {
+      color: var(--victoria-green-dark);
+    }
+  }
+
+  img {
+    border-radius: 6px;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Author profile
+   -------------------------------------------------------------------------- */
+
+.author__name {
+  color: var(--victoria-green-dark);
+}
+
+.author__bio {
+  color: var(--victoria-muted);
+}
+
+.author__urls {
+  a {
+    color: var(--victoria-muted);
+
+    &:hover {
+      color: var(--victoria-green);
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Main content
+   -------------------------------------------------------------------------- */
+
+.page {
+  color: var(--victoria-text);
+}
+
+.page__title {
+  color: var(--victoria-green-dark);
+  font-weight: 700;
+}
+
+.page__content {
+  h2 {
+    margin-top: 2.2em;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid var(--victoria-border);
+  }
+
+  h3 {
+    margin-top: 1.8em;
+  }
+
+  blockquote {
+    border-left-color: var(--victoria-green);
+    background: var(--victoria-green-light);
+    padding: 0.8em 1em;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
+
+table {
+  border: 1px solid var(--victoria-border);
+
+  th {
+    color: var(--victoria-green-dark);
+    background: var(--victoria-background);
+    border-bottom: 2px solid var(--victoria-green);
+  }
+
+  td {
+    border-bottom: 1px solid var(--victoria-border);
+  }
+
+  tbody tr:hover {
+    background: #fafcfb;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Horizontal rules
+   -------------------------------------------------------------------------- */
+
+hr {
+  border-top-color: var(--victoria-border);
+}
+
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+
+.btn {
+  border-radius: 3px;
+  border-color: var(--victoria-green);
+  background-color: var(--victoria-green);
+  color: #fff;
+
+  &:hover {
+    background-color: var(--victoria-green-dark);
+    border-color: var(--victoria-green-dark);
+    color: #fff;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Notices
+   -------------------------------------------------------------------------- */
+
+.notice,
+.notice--primary,
+.notice--info,
+.notice--success,
+.notice--warning,
+.notice--danger {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+/* --------------------------------------------------------------------------
+   Code
+   -------------------------------------------------------------------------- */
+
+code {
+  color: var(--victoria-green-dark);
+  background: var(--victoria-green-light);
+  border-color: var(--victoria-border);
+}
+
+
+/* --------------------------------------------------------------------------
+   Figures / images
+   -------------------------------------------------------------------------- */
+
+.page__content img {
+  border-radius: 5px;
+}
+
+
+/* --------------------------------------------------------------------------
+   Publication / archive items
+   -------------------------------------------------------------------------- */
+
+.archive__item {
+  border-bottom: 1px solid var(--victoria-border);
+  padding-bottom: 1.25em;
+  margin-bottom: 1.5em;
+}
+
+.archive__item-title {
+  color: var(--victoria-green-dark);
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--victoria-green);
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Metadata
+   -------------------------------------------------------------------------- */
+
+.page__meta,
+.archive__item-excerpt,
+.archive__item-teaser {
+  color: var(--victoria-muted);
+}
+
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+.page__footer {
+  background: var(--victoria-background);
+  border-top: 1px solid var(--victoria-border);
+  color: var(--victoria-muted);
+
+  a {
+    color: var(--victoria-green);
+
+    &:hover {
+      color: var(--victoria-green-dark);
+    }
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   Subtle focus treatment
+   -------------------------------------------------------------------------- */
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid rgba(73, 98, 79, 0.28);
+  outline-offset: 2px;
+}
+
+
+/* --------------------------------------------------------------------------
+   Mobile
+   -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.65em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .page__content {
+    h2 {
+      margin-top: 1.8em;
+    }
+  }
+}
