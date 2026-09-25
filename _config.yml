@@ -13,7 +13,7 @@ title                    : "Dr Victoria Lindsay-McGee"
 title_separator          : "-"
 name                     : &name "Dr Victoria Lindsay-McGee"
 description              : &description "Equine geneticist, veterinary data scientist, Equine Science MSc programme coordinator and horse husbandry teaching fellow."
-url                      : https://victorialindsaymcgee.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+url                      : https://victorialindsaymcgee.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "victorialindsaymcgee/victorialindsaymcgee.github.io"
 
