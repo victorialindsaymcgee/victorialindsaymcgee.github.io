@@ -29,9 +29,12 @@ I then completed a PhD at the Royal Veterinary College investigating the genomic
 </div>
 
 
-Since 2022 I have been based at the [Royal (Dick) School of Veterinary Studies](https://vet.ed.ac.uk) at the University of Edinburgh, where I coordinate the [Equine Science MSc](https://vet.ed.ac.uk/studying/postgraduate/taught-programmes/msc-equine-science) programme and serve as a Teaching Fellow in [BVM&S](https://vet.ed.ac.uk/education/undergraduate) Horse Husbandry. This role has allowed me to combine my research background with a deepening commitment to teaching and programme leadership. I am currently completing a Postgraduate Certificate in Academic Practice (expected 2027), and I am co-supervisor on an EastBio Doctoral Training Programme studentship funded from 2025. My research interests continue to develop around equine genomics, veterinary data science, and the translation of genomic approaches into equine clinical and breeding contexts.
+From 2022 to 2026 I served a Programme Coordinator for the [Equine Science MSc](https://vet.ed.ac.uk/studying/postgraduate/taught-programmes/msc-equine-science) programme at the [Royal (Dick) School of Veterinary Studies](https://vet.ed.ac.uk) at the University of Edinburgh, whilst also holding a Teaching Fellow position contributing to [BVM&S](https://vet.ed.ac.uk/education/undergraduate) horse husbandry teaching. In this role I oversaw 
+programme delivery, student recruitment, curriculum development and quality assurance, while continuing to teach research methods, statistics and quantitative genetics across postgraduate programmes. This period deepened my commitment to evidence-informed veterinary education and curriculum design.
 
-I am also a Royal Statistical Society accredited Data Analyst, reflecting my interest in combining biological and veterinary expertise with rigorous quantitative approaches.
+In 2026 I was promoted to Lecturer in Applied Animal Science & Husbandry, where I now lead the Animal Life and Food Safety courses for first and second year veterinary students on the [BVM&S](https://vet.ed.ac.uk/education/undergraduate) programme. I continue to contribute to MSc teaching in research methods, statistics and quantitative genetics, and I am co-supervisor on an EastBio Doctoral Training Programme studentship funded from 2025. My research interests continue to develop around equine genomics, veterinary data science, and the translation of genomic approaches into equine clinical and breeding contexts.
+
+I am a Fellow of the Royal Statistical Society and an accredited RSS Data Analyst, reflecting my commitment to rigorous quantitative methods alongside my biological and veterinary expertise.
 
 
 Qualifications
@@ -44,8 +47,9 @@ Qualifications
 
 Employment
 ======
-* Aug 2022 - 2022: Royal (Dick) School of Veterinary Studies, University of Edinburgh
-  * Position: Programme Coordinator for MSc Equine Science and BVM&S Horse Husbandry Teaching Fellow
+* Aug 2022 - present: Royal (Dick) School of Veterinary Studies, University of Edinburgh
+  * Position: 2026-present Lecturer in Applied Animal Science & Husbandry
+  * Position: 2022-2026 Programme Coordinator for MSc Equine Science and BVM&S Horse Husbandry Teaching Fellow
 
 * Oct 2018 – Nov 2022: Royal Veterinary College
   * Position: Undergraduate research project supervisor
@@ -92,10 +96,9 @@ Service and leadership
 * Organising Committee member for the [2025](https://www.bsas.org.uk/events/article/bsas-equine-conference-2025) and 2027 BSAS Equine Conference
 * Organising Committee member for the 2024 Edinburgh Next Generation of Genomics Symposium (ENGoGS)
 * Member of the [British Society of Animal Science](https://www.bsas.org.uk) and member of the Judging Panel for the [BSAS Undergraduate Thesis of the Year Award](https://www.bsas.org.uk/undergraduates-and-early-career/thesis-of-the-year/). Previously member of the [Early Career Council](https://www.bsas.org.uk/undergraduates-and-early-career/council-members/) (2019-2026) and Early Careers Rep on the BSAS Publications Committee.
-* BISAS member of the  [animal](https://animal-journal.eu/) journal family management board as of 2026
+* BISAS member of the [animal](https://animal-journal.eu/) journal family management board as of 2026
 * Reviewer for the R(D)SVS Veterinary Ethical Review Committee
 * Member of the R(D)SVS AI Working Group
-* Member of the R(D)SVS PGT Teaching & Learning Committee
 
 ### Learned society membership
 
