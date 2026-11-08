@@ -1,128 +1,144 @@
 /* ==========================================================================
    VICTORIA LINDSAY MCGEE — SITE CUSTOMISATION
-   Light-touch visual refresh for AcademicPages.
+   Overrides global theme variables to ensure site-wide dark mode support
    ========================================================================== */
 
-
 /* --------------------------------------------------------------------------
-   Light Mode Variables (Default)
+   LIGHT MODE (Default)
+   Overrides theme/default.scss variables
    -------------------------------------------------------------------------- */
-
 :root {
+  /* Core Theme Overrides */
+  --global-bg-color: #f7f8f7;
+  --global-text-color: #303633;
+  --global-text-color-light: #68716c;
+  --global-border-color: #d9dfdb;
+  --global-link-color: #49624f;
+  --global-link-color-hover: #354a3b;
+  --global-masthead-link-color: #303633;
+  --global-code-background-color: #edf2ee;
+  
+  /* Victoria Custom Variables */
   --victoria-green: #49624f;
   --victoria-green-dark: #354a3b;
   --victoria-green-light: #edf2ee;
-
   --victoria-blue: #58717d;
   --victoria-blue-dark: #435a64;
   --victoria-blue-light: #edf2f4;
-
   --victoria-gold: #987946;
   --victoria-gold-dark: #70572f;
   --victoria-gold-light: #f5f1e8;
-
-  --victoria-text: #303633;
-  --victoria-muted: #68716c;
-
-  --victoria-border: #d9dfdb;
-  --victoria-background: #f7f8f7;
   --victoria-surface: #ffffff;
 }
 
-
 /* --------------------------------------------------------------------------
-   Dark Mode Variables - MATCHES YOUR THEME SELECTOR
+   DARK MODE
+   Overrides theme/dark.scss variables - MATCHES YOUR THEME SELECTOR
    -------------------------------------------------------------------------- */
-
 html[data-theme="dark"] {
-  --victoria-text: #e8e8e8;
-  --victoria-muted: #c0c0c0;
-  --victoria-background: #0d0f0d;
-  --victoria-surface: #151915;
-  --victoria-border: #2a2f2a;
+  /* Core Theme Overrides */
+  --global-bg-color: #0d0f0d;
+  --global-text-color: #e8e8e8;
+  --global-text-color-light: #c0c0c0;
+  --global-border-color: #2a2f2a;
+  --global-link-color: #b8d4be;
+  --global-link-color-hover: #d4c4b8;
+  --global-masthead-link-color: #e8e8e8;
+  --global-code-background-color: #152018;
   
+  /* Victoria Custom Variables */
+  --victoria-green: #b8d4be;
+  --victoria-green-dark: #d4c4b8;
   --victoria-green-light: #152018;
+  --victoria-blue: #b8c4d4;
+  --victoria-blue-dark: #d4c4b8;
   --victoria-blue-light: #151c20;
+  --victoria-gold: #d4c4b8;
+  --victoria-gold-dark: #e8e8e8;
   --victoria-gold-light: #201a15;
-
-  --victoria-green-dark: #b8d4be;
-  --victoria-blue-dark: #b8c4d4;
-  --victoria-gold-dark: #d4c4b8;
+  --victoria-surface: #151915;
 }
-
 
 /* --------------------------------------------------------------------------
-   Base Styles (Use Variables - Auto-Switch in Dark Mode)
+   Base Styles
    -------------------------------------------------------------------------- */
-
 body {
-  color: var(--victoria-text);
-  background-color: var(--victoria-background);
-  line-height: 1.65;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
 }
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--victoria-green-dark);
-  letter-spacing: -0.015em;
-}
-
-h1 { font-weight: 700; }
-h2, h3, h4, h5, h6 { font-weight: 650; }
-
-p { line-height: 1.7; }
 
 a {
-  color: var(--victoria-green);
-  &:hover { color: var(--victoria-green-dark); }
+  color: var(--global-link-color);
+  &:hover { color: var(--global-link-color-hover); }
 }
 
+/* --------------------------------------------------------------------------
+   Masthead
+   -------------------------------------------------------------------------- */
 .masthead {
   background: var(--victoria-surface);
-  &::after { background: var(--victoria-border); }
+  &::after { background: var(--global-border-color); }
 }
 
+/* --------------------------------------------------------------------------
+   Sidebar
+   -------------------------------------------------------------------------- */
 .sidebar {
-  color: var(--victoria-muted);
+  color: var(--global-text-color-light);
   a {
-    color: var(--victoria-green);
-    &:hover { color: var(--victoria-green-dark); }
+    color: var(--global-link-color);
+    &:hover { color: var(--global-link-color-hover); }
   }
 }
 
+/* --------------------------------------------------------------------------
+   Author Profile
+   -------------------------------------------------------------------------- */
 .author__avatar img {
   border-radius: 50%;
   border: 3px solid var(--victoria-surface);
-  box-shadow: 0 0 0 1px var(--victoria-border), 0 4px 12px rgba(53, 74, 59, 0.12);
+  box-shadow: 0 0 0 1px var(--global-border-color), 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.author__name { color: var(--victoria-green-dark); }
-.author__bio { color: var(--victoria-muted); }
+.author__name { color: var(--global-text-color); }
+.author__bio { color: var(--global-text-color-light); }
 
+/* --------------------------------------------------------------------------
+   Page Content
+   -------------------------------------------------------------------------- */
 .page {
-  color: var(--victoria-text);
-  background-color: var(--victoria-background);
+  color: var(--global-text-color);
 }
 
 .page__content {
-  h2 {
-    border-bottom-color: var(--victoria-border);
-  }
+  h2 { border-bottom-color: var(--global-border-color); }
   blockquote {
     border-left-color: var(--victoria-green);
     background: var(--victoria-green-light);
+    color: var(--global-text-color);
   }
 }
 
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
 table {
-  border-color: var(--victoria-border);
+  border-color: var(--global-border-color);
   th {
-    background: var(--victoria-background);
+    background: var(--global-bg-color);
     border-bottom-color: var(--victoria-green);
+    color: var(--global-text-color);
   }
-  td { border-bottom-color: var(--victoria-border); }
+  td {
+    border-bottom-color: var(--global-border-color);
+    color: var(--global-text-color);
+  }
   tbody tr:hover { background: var(--victoria-green-light); }
 }
 
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
 .btn {
   background-color: var(--victoria-green);
   border-color: var(--victoria-green);
@@ -133,18 +149,24 @@ table {
   }
 }
 
+/* --------------------------------------------------------------------------
+   Code
+   -------------------------------------------------------------------------- */
 code {
-  background: var(--victoria-green-light);
-  border-color: var(--victoria-border);
+  background: var(--global-code-background-color);
+  border-color: var(--global-border-color);
+  color: var(--global-text-color);
 }
 
-/* Content highlights */
+/* --------------------------------------------------------------------------
+   Content Highlights
+   -------------------------------------------------------------------------- */
 .v-highlight {
   margin: 1.5em 0;
   padding: 1em 1.25em;
   border-left: 3px solid;
   border-radius: 0 4px 4px 0;
-  color: var(--victoria-text);
+  color: var(--global-text-color);
 }
 
 .v-research {
@@ -168,7 +190,9 @@ code {
   strong, .v-highlight__title, a { color: var(--victoria-gold-dark); }
 }
 
-/* Collection items */
+/* --------------------------------------------------------------------------
+   Collection Items
+   -------------------------------------------------------------------------- */
 .archive__item--research {
   background: var(--victoria-green-light);
   border-left: 3px solid var(--victoria-green);
@@ -190,13 +214,18 @@ code {
   margin-bottom: 1.5em;
 }
 
+/* --------------------------------------------------------------------------
+   Conference Image
+   -------------------------------------------------------------------------- */
 .conference-header-image {
-  border: 1px solid var(--victoria-border);
+  border: 1px solid var(--global-border-color);
   background: var(--victoria-surface);
-  box-shadow: 0 3px 12px rgba(53, 74, 59, 0.10);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
 }
 
-/* Page buttons */
+/* --------------------------------------------------------------------------
+   Page Buttons
+   -------------------------------------------------------------------------- */
 .v-page-button {
   padding: 0.55em 1em;
   border: 1px solid;
@@ -242,7 +271,9 @@ code {
   }
 }
 
-/* Mobile */
+/* --------------------------------------------------------------------------
+   Mobile
+   -------------------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
   h1 { font-size: 1.65em; }
   h2 { font-size: 1.25em; }
