@@ -1,71 +1,94 @@
 /* ==========================================================================
-   VICTORIA LINDSAY MCGEE — SITE CUSTOMISATION
-   Light-touch visual refresh for AcademicPages.
-   ========================================================================== */
+  VICTORIA LINDSAY MCGEE — SITE CUSTOMISATION
+  Light-touch visual refresh for AcademicPages.
+  ========================================================================== */
 
 
 /* --------------------------------------------------------------------------
-   Colour palette
-   -------------------------------------------------------------------------- */
+  Colour palette (Light Mode Default)
+  -------------------------------------------------------------------------- */
 
 :root {
-  /* Light Mode Variables */
-  --victoria-green: #49624f;
-  --victoria-green-dark: #354a3b;
-  --victoria-green-light: #edf2ee;
+ --victoria-green: #49624f;
+ --victoria-green-dark: #354a3b;
+ --victoria-green-light: #edf2ee;
 
-  --victoria-blue: #58717d;
-  --victoria-blue-dark: #435a64;
-  --victoria-blue-light: #edf2f4;
+ --victoria-blue: #58717d;
+ --victoria-blue-dark: #435a64;
+ --victoria-blue-light: #edf2f4;
 
-  --victoria-gold: #987946;
-  --victoria-gold-dark: #70572f;
-  --victoria-gold-light: #f5f1e8;
+ --victoria-gold: #987946;
+ --victoria-gold-dark: #70572f;
+ --victoria-gold-light: #f5f1e8;
 
-  --victoria-text: #303633;
-  --victoria-muted: #68716c;
+ --victoria-text: #303633;
+ --victoria-muted: #68716c;
 
-  --victoria-border: #d9dfdb;
-  --victoria-border-dark: #c5cec8;
+ --victoria-border: #d9dfdb;
+ --victoria-border-dark: #c5cec8;
 
-  --victoria-background: #f7f8f7;
-  --victoria-surface: #ffffff;
-}
-
-/* Dark Mode Overrides */
-[data-mode="dark"] {
-  --victoria-text: #e1e4e6;
-  --victoria-muted: #b0b6bb;
-  --victoria-background: #1a1c1a;
-  --victoria-surface: #25292d;
-  --victoria-border: #3a3f44;
-  
-  /* Adjust light colors to be darker for dark mode backgrounds */
-  --victoria-green-light: #2a382e;
-  --victoria-blue-light: #2a353b;
-  --victoria-gold-light: #3b2f1a;
-
-  /* Adjust dark colors to be lighter for dark mode text */
-  --victoria-green-dark: #8fa896;
-  --victoria-blue-dark: #8fa3b0;
-  --victoria-gold-dark: #b09a70;
+ --victoria-background: #f7f8f7;
+ --victoria-surface: #ffffff;
 }
 
 
 /* --------------------------------------------------------------------------
-   Overall page
-   -------------------------------------------------------------------------- */
+  Dark Mode Overrides
+  Targets both .dark-mode class and data-mode attribute for compatibility
+  -------------------------------------------------------------------------- */
+
+html.dark-mode,
+[data-mode="dark"] {
+ --victoria-text: #e1e4e6;
+ --victoria-muted: #b0b6bb;
+ --victoria-background: #1a1c1a;
+ --victoria-surface: #25292d;
+ --victoria-border: #3a3f44;
+ 
+ --victoria-green-light: #2a382e;
+ --victoria-blue-light: #2a353b;
+ --victoria-gold-light: #3b2f1a;
+
+ --victoria-green-dark: #8fa896;
+ --victoria-blue-dark: #8fa3b0;
+ --victoria-gold-dark: #b09a70;
+
+ /* Explicit Body Overrides to ensure cascade priority */
+ body {
+   color: var(--victoria-text);
+   background-color: var(--victoria-background);
+ }
+
+ .page {
+   color: var(--victoria-text);
+   background-color: var(--victoria-background);
+ }
+
+ .masthead {
+   background: var(--victoria-surface);
+ }
+ 
+ .sidebar {
+   background: var(--victoria-surface);
+   color: var(--victoria-muted);
+ }
+}
+
+
+/* --------------------------------------------------------------------------
+  Overall page (Light Mode Base)
+  -------------------------------------------------------------------------- */
 
 body {
-  color: var(--victoria-text);
-  background-color: var(--victoria-background);
-  line-height: 1.65;
+ color: var(--victoria-text);
+ background-color: var(--victoria-background);
+ line-height: 1.65;
 }
 
 
 /* --------------------------------------------------------------------------
-   Typography
-   -------------------------------------------------------------------------- */
+  Typography
+  -------------------------------------------------------------------------- */
 
 h1,
 h2,
@@ -73,12 +96,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--victoria-green-dark);
-  letter-spacing: -0.015em;
+ color: var(--victoria-green-dark);
+ letter-spacing: -0.015em;
 }
 
 h1 {
-  font-weight: 700;
+ font-weight: 700;
 }
 
 h2,
@@ -86,223 +109,220 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 650;
+ font-weight: 650;
 }
 
 p {
-  line-height: 1.7;
+ line-height: 1.7;
 }
 
 
 /* --------------------------------------------------------------------------
-   Links
-   -------------------------------------------------------------------------- */
+  Links
+  -------------------------------------------------------------------------- */
 
 a {
-  color: var(--victoria-green);
+ color: var(--victoria-green);
 
-  &:hover,
-  &:active {
-    color: var(--victoria-green-dark);
-  }
+ &:hover,
+ &:active {
+   color: var(--victoria-green-dark);
+ }
 }
 
 
 /* --------------------------------------------------------------------------
-   Masthead / top navigation
-   -------------------------------------------------------------------------- */
+  Masthead / top navigation
+  -------------------------------------------------------------------------- */
 
 .masthead {
-  /* Replaced rgba(255, 255, 255, 0.97) with variable for dark mode support */
-  background: var(--victoria-surface);
+ background: var(--victoria-surface);
 
-  &::after {
-    background: var(--victoria-border);
-  }
+ &::after {
+   background: var(--victoria-border);
+ }
 }
 
 .greedy-nav {
-  background: transparent;
+ background: transparent;
 
-  a {
-    color: var(--victoria-muted);
-    font-weight: 500;
+ a {
+   color: var(--victoria-muted);
+   font-weight: 500;
 
-    &:hover {
-      color: var(--victoria-green);
-    }
-  }
+   &:hover {
+     color: var(--victoria-green);
+   }
+ }
 
-  .visible-links a {
-    &::before {
-      height: 2px;
-      background: var(--victoria-green);
-    }
-  }
+ .visible-links a {
+   &::before {
+     height: 2px;
+     background: var(--victoria-green);
+   }
+ }
 
-  .visible-links li:first-child a {
-    color: var(--victoria-green-dark);
-    font-weight: 700;
-  }
+ .visible-links li:first-child a {
+   color: var(--victoria-green-dark);
+   font-weight: 700;
+ }
 
-  .hidden-links {
-    border-color: var(--victoria-border);
-    box-shadow: 0 8px 24px rgba(53, 74, 59, 0.10);
+ .hidden-links {
+   border-color: var(--victoria-border);
+   box-shadow: 0 8px 24px rgba(53, 74, 59, 0.10);
 
-    a:hover {
-      color: var(--victoria-green-dark);
-      background: var(--victoria-green-light);
-    }
-  }
+   a:hover {
+     color: var(--victoria-green-dark);
+     background: var(--victoria-green-light);
+   }
+ }
 }
 
 
 /* --------------------------------------------------------------------------
-   Sidebar
-   -------------------------------------------------------------------------- */
+  Sidebar
+  -------------------------------------------------------------------------- */
 
 .sidebar {
-  color: var(--victoria-muted);
+ color: var(--victoria-muted);
 
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: var(--victoria-green-dark);
-  }
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   color: var(--victoria-green-dark);
+ }
 
-  a {
-    color: var(--victoria-green);
+ a {
+   color: var(--victoria-green);
 
-    &:hover {
-      color: var(--victoria-green-dark);
-    }
-  }
+   &:hover {
+     color: var(--victoria-green-dark);
+   }
+ }
 }
 
 
 /* --------------------------------------------------------------------------
-   Author profile
-   Keep the classic AcademicPages oval portrait, with a softer frame.
-   -------------------------------------------------------------------------- */
+  Author profile
+  -------------------------------------------------------------------------- */
 
 .author__avatar {
-  img {
-    border-radius: 50%;
-    /* Replaced #fff with variable */
-    border: 3px solid var(--victoria-surface);
-    box-shadow:
-      0 0 0 1px var(--victoria-border),
-      0 4px 12px rgba(53, 74, 59, 0.12);
-  }
+ img {
+   border-radius: 50%;
+   border: 3px solid var(--victoria-surface);
+   box-shadow:
+     0 0 0 1px var(--victoria-border),
+     0 4px 12px rgba(53, 74, 59, 0.12);
+ }
 }
 
 .author__name {
-  color: var(--victoria-green-dark);
+ color: var(--victoria-green-dark);
 }
 
 .author__bio {
-  color: var(--victoria-muted);
+ color: var(--victoria-muted);
 }
 
 .author__urls {
-  a {
-    color: var(--victoria-muted);
+ a {
+   color: var(--victoria-muted);
 
-    &:hover {
-      color: var(--victoria-green);
-    }
-  }
+   &:hover {
+     color: var(--victoria-green);
+   }
+ }
 }
 
 
 /* --------------------------------------------------------------------------
-   Main content
-   -------------------------------------------------------------------------- */
+  Main content
+  -------------------------------------------------------------------------- */
 
 .page {
-  color: var(--victoria-text);
+ color: var(--victoria-text);
+ background-color: var(--victoria-background); /* Explicit background */
 }
 
 .page__title {
-  color: var(--victoria-green-dark);
-  font-weight: 700;
+ color: var(--victoria-green-dark);
+ font-weight: 700;
 }
 
 .page__content {
-  h2 {
-    margin-top: 2.2em;
-    padding-bottom: 0.35em;
-    border-bottom: 1px solid var(--victoria-border);
-  }
+ h2 {
+   margin-top: 2.2em;
+   padding-bottom: 0.35em;
+   border-bottom: 1px solid var(--victoria-border);
+ }
 
-  h3 {
-    margin-top: 1.8em;
-  }
+ h3 {
+   margin-top: 1.8em;
+ }
 
-  blockquote {
-    border-left-color: var(--victoria-green);
-    background: var(--victoria-green-light);
-    padding: 0.8em 1em;
-  }
+ blockquote {
+   border-left-color: var(--victoria-green);
+   background: var(--victoria-green-light);
+   padding: 0.8em 1em;
+ }
 }
 
 
 /* --------------------------------------------------------------------------
-   Tables
-   -------------------------------------------------------------------------- */
+  Tables
+  -------------------------------------------------------------------------- */
 
 table {
-  border: 1px solid var(--victoria-border);
+ border: 1px solid var(--victoria-border);
 
-  th {
-    color: var(--victoria-green-dark);
-    background: var(--victoria-background);
-    border-bottom: 2px solid var(--victoria-green);
-  }
+ th {
+   color: var(--victoria-green-dark);
+   background: var(--victoria-background);
+   border-bottom: 2px solid var(--victoria-green);
+ }
 
-  td {
-    border-bottom: 1px solid var(--victoria-border);
-  }
+ td {
+   border-bottom: 1px solid var(--victoria-border);
+ }
 
-  tbody tr:hover {
-    /* Replaced #fafcfb with variable */
-    background: var(--victoria-green-light);
-  }
+ tbody tr:hover {
+   background: var(--victoria-green-light);
+ }
 }
 
 
 /* --------------------------------------------------------------------------
-   Horizontal rules
-   -------------------------------------------------------------------------- */
+  Horizontal rules
+  -------------------------------------------------------------------------- */
 
 hr {
-  border-top-color: var(--victoria-border);
+ border-top-color: var(--victoria-border);
 }
 
 
 /* --------------------------------------------------------------------------
-   Buttons
-   -------------------------------------------------------------------------- */
+  Buttons
+  -------------------------------------------------------------------------- */
 
 .btn {
-  border-radius: 3px;
-  border-color: var(--victoria-green);
-  background-color: var(--victoria-green);
-  color: #fff;
+ border-radius: 3px;
+ border-color: var(--victoria-green);
+ background-color: var(--victoria-green);
+ color: #fff;
 
-  &:hover {
-    background-color: var(--victoria-green-dark);
-    border-color: var(--victoria-green-dark);
-    color: #fff;
-  }
+ &:hover {
+   background-color: var(--victoria-green-dark);
+   border-color: var(--victoria-green-dark);
+   color: #fff;
+ }
 }
 
 
 /* --------------------------------------------------------------------------
-   Notices
-   -------------------------------------------------------------------------- */
+  Notices
+  -------------------------------------------------------------------------- */
 
 .notice,
 .notice--primary,
@@ -310,411 +330,287 @@ hr {
 .notice--success,
 .notice--warning,
 .notice--danger {
-  border-radius: 0;
-  box-shadow: none;
+ border-radius: 0;
+ box-shadow: none;
 }
 
 
 /* --------------------------------------------------------------------------
-   Code
-   -------------------------------------------------------------------------- */
+  Code
+  -------------------------------------------------------------------------- */
 
 code {
-  color: var(--victoria-green-dark);
-  background: var(--victoria-green-light);
-  border-color: var(--victoria-border);
+ color: var(--victoria-green-dark);
+ background: var(--victoria-green-light);
+ border-color: var(--victoria-border);
 }
 
 
 /* --------------------------------------------------------------------------
-   Figures / images
-   -------------------------------------------------------------------------- */
+  Figures / images
+  -------------------------------------------------------------------------- */
 
 .page__content img {
-  border-radius: 5px;
+ border-radius: 5px;
 }
 
 
 /* ==========================================================================
-   CONTENT HIGHLIGHTS
-   Green = Research
-   Blue  = Teaching
-   Gold  = Awards / Recognition
-   ========================================================================== */
-
-
-/* --------------------------------------------------------------------------
-   Base highlight
-   -------------------------------------------------------------------------- */
+  CONTENT HIGHLIGHTS
+  ========================================================================== */
 
 .v-highlight {
-  margin: 1.5em 0;
-  padding: 1em 1.25em;
-  border-left: 3px solid;
-  border-radius: 0 4px 4px 0;
-  color: var(--victoria-text);
+ margin: 1.5em 0;
+ padding: 1em 1.25em;
+ border-left: 3px solid;
+ border-radius: 0 4px 4px 0;
+ color: var(--victoria-text);
 
-  p:last-child {
-    margin-bottom: 0;
-  }
+ p:last-child {
+   margin-bottom: 0;
+ }
 
-  strong {
-    font-weight: 700;
-  }
+ strong {
+   font-weight: 700;
+ }
 
-  a {
-    font-weight: 600;
-  }
+ a {
+   font-weight: 600;
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   Research — GREEN
-   -------------------------------------------------------------------------- */
 
 .v-research {
-  @extend .v-highlight;
+ @extend .v-highlight;
+ background: var(--victoria-green-light);
+ border-left-color: var(--victoria-green);
 
-  background: var(--victoria-green-light);
-  border-left-color: var(--victoria-green);
+ strong,
+ .v-highlight__title {
+   color: var(--victoria-green-dark);
+ }
 
-  strong,
-  .v-highlight__title {
-    color: var(--victoria-green-dark);
-  }
-
-  a {
-    color: var(--victoria-green-dark);
-
-    &:hover {
-      color: var(--victoria-green);
-    }
-  }
+ a {
+   color: var(--victoria-green-dark);
+   &:hover { color: var(--victoria-green); }
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   Teaching — BLUE
-   -------------------------------------------------------------------------- */
 
 .v-teaching {
-  @extend .v-highlight;
+ @extend .v-highlight;
+ background: var(--victoria-blue-light);
+ border-left-color: var(--victoria-blue);
 
-  background: var(--victoria-blue-light);
-  border-left-color: var(--victoria-blue);
+ strong,
+ .v-highlight__title {
+   color: var(--victoria-blue-dark);
+ }
 
-  strong,
-  .v-highlight__title {
-    color: var(--victoria-blue-dark);
-  }
-
-  a {
-    color: var(--victoria-blue-dark);
-
-    &:hover {
-      color: var(--victoria-blue);
-    }
-  }
+ a {
+   color: var(--victoria-blue-dark);
+   &:hover { color: var(--victoria-blue); }
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   Awards / Recognition — GOLD
-   -------------------------------------------------------------------------- */
 
 .v-award {
-  @extend .v-highlight;
+ @extend .v-highlight;
+ background: var(--victoria-gold-light);
+ border-left-color: var(--victoria-gold);
 
-  background: var(--victoria-gold-light);
-  border-left-color: var(--victoria-gold);
+ strong,
+ .v-highlight__title {
+   color: var(--victoria-gold-dark);
+ }
 
-  strong,
-  .v-highlight__title {
-    color: var(--victoria-gold-dark);
-  }
-
-  a {
-    color: var(--victoria-gold-dark);
-
-    &:hover {
-      color: var(--victoria-gold);
-    }
-  }
+ a {
+   color: var(--victoria-gold-dark);
+   &:hover { color: var(--victoria-gold); }
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   Highlight title
-   -------------------------------------------------------------------------- */
 
 .v-highlight__title {
-  display: block;
-  margin-bottom: 0.35em;
-  font-weight: 700;
+ display: block;
+ margin-bottom: 0.35em;
+ font-weight: 700;
 }
-
-
-/* --------------------------------------------------------------------------
-   Compact highlight
-   -------------------------------------------------------------------------- */
 
 .v-highlight--compact {
-  padding: 0.7em 1em;
-  font-size: 0.95em;
+ padding: 0.7em 1em;
+ font-size: 0.95em;
 }
-
-
-/* --------------------------------------------------------------------------
-   Optional small label
-   -------------------------------------------------------------------------- */
 
 .v-highlight__label {
-  display: inline-block;
-  margin-bottom: 0.4em;
-  font-size: 0.72em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+ display: inline-block;
+ margin-bottom: 0.4em;
+ font-size: 0.72em;
+ font-weight: 700;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
 }
 
-.v-research .v-highlight__label {
-  color: var(--victoria-green);
-}
-
-.v-teaching .v-highlight__label {
-  color: var(--victoria-blue);
-}
-
-.v-award .v-highlight__label {
-  color: var(--victoria-gold);
-}
+.v-research .v-highlight__label { color: var(--victoria-green); }
+.v-teaching .v-highlight__label { color: var(--victoria-blue); }
+.v-award .v-highlight__label { color: var(--victoria-gold); }
 
 
 /* ==========================================================================
-   ACADEMICPAGES COLLECTION HIGHLIGHTS
-   ========================================================================== */
-
-
-/* --------------------------------------------------------------------------
-   Research collection item — GREEN
-   -------------------------------------------------------------------------- */
+  ACADEMICPAGES COLLECTION HIGHLIGHTS
+  ========================================================================== */
 
 .archive__item--research {
-  background: var(--victoria-green-light);
-  border-left: 3px solid var(--victoria-green);
-  border-radius: 0 4px 4px 0;
-  padding: 1em 1.2em;
-  margin-bottom: 1.5em;
+ background: var(--victoria-green-light);
+ border-left: 3px solid var(--victoria-green);
+ border-radius: 0 4px 4px 0;
+ padding: 1em 1.2em;
+ margin-bottom: 1.5em;
 
-  .archive__item-title a {
-    color: var(--victoria-green-dark);
-
-    &:hover {
-      color: var(--victoria-green);
-    }
-  }
+ .archive__item-title a {
+   color: var(--victoria-green-dark);
+   &:hover { color: var(--victoria-green); }
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   Teaching collection item — BLUE
-   -------------------------------------------------------------------------- */
 
 .archive__item--teaching {
-  background: var(--victoria-blue-light);
-  border-left: 3px solid var(--victoria-blue);
-  border-radius: 0 4px 4px 0;
-  padding: 1em 1.2em;
-  margin-bottom: 1.5em;
+ background: var(--victoria-blue-light);
+ border-left: 3px solid var(--victoria-blue);
+ border-radius: 0 4px 4px 0;
+ padding: 1em 1.2em;
+ margin-bottom: 1.5em;
 
-  .archive__item-title a {
-    color: var(--victoria-blue-dark);
-
-    &:hover {
-      color: var(--victoria-blue);
-    }
-  }
+ .archive__item-title a {
+   color: var(--victoria-blue-dark);
+   &:hover { color: var(--victoria-blue); }
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   Award collection item — GOLD
-   -------------------------------------------------------------------------- */
 
 .archive__item--award {
-  background: var(--victoria-gold-light);
-  border-left: 3px solid var(--victoria-gold);
-  border-radius: 0 4px 4px 0;
-  padding: 1em 1.2em;
-  margin-bottom: 1.5em;
+ background: var(--victoria-gold-light);
+ border-left: 3px solid var(--victoria-gold);
+ border-radius: 0 4px 4px 0;
+ padding: 1em 1.2em;
+ margin-bottom: 1.5em;
 
-  .archive__item-title a {
-    color: var(--victoria-gold-dark);
-
-    &:hover {
-      color: var(--victoria-gold);
-    }
-  }
+ .archive__item-title a {
+   color: var(--victoria-gold-dark);
+   &:hover { color: var(--victoria-gold); }
+ }
 }
 
 
 /* ==========================================================================
-   CONFERENCE HEADER IMAGE
-   Soft framed treatment for the image on the Conferences page.
-   ========================================================================== */
+  CONFERENCE HEADER IMAGE
+  ========================================================================== */
 
 .conference-header-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid var(--victoria-border);
-  padding: 5px;
-  /* Replaced #fff with variable */
-  background: var(--victoria-surface);
-  box-shadow: 0 3px 12px rgba(53, 74, 59, 0.10);
+ max-width: 100%;
+ height: auto;
+ border-radius: 8px;
+ border: 1px solid var(--victoria-border);
+ padding: 5px;
+ background: var(--victoria-surface);
+ box-shadow: 0 3px 12px rgba(53, 74, 59, 0.10);
 }
 
 
 /* --------------------------------------------------------------------------
-   Mobile
-   -------------------------------------------------------------------------- */
+  Mobile
+  -------------------------------------------------------------------------- */
 
 @media screen and (max-width: 768px) {
+ h1 { font-size: 1.65em; }
+ h2 { font-size: 1.25em; }
 
-  h1 {
-    font-size: 1.65em;
-  }
+ .page__content {
+   h2 { margin-top: 1.8em; }
+ }
 
-  h2 {
-    font-size: 1.25em;
-  }
+ .v-highlight { padding: 0.9em 1em; }
 
-  .page__content {
-    h2 {
-      margin-top: 1.8em;
-    }
-  }
-
-  .v-highlight {
-    padding: 0.9em 1em;
-  }
-
-  .archive__item--research,
-  .archive__item--teaching,
-  .archive__item--award {
-    padding: 0.9em 1em;
-  }
+ .archive__item--research,
+ .archive__item--teaching,
+ .archive__item--award {
+   padding: 0.9em 1em;
+ }
 }
+
 
 /* ==========================================================================
-   ABOUT PAGE — COLOUR-CODED NAVIGATION BUTTONS
-   ========================================================================== */
+  ABOUT PAGE — COLOUR-CODED NAVIGATION BUTTONS
+  ========================================================================== */
 
 .v-page-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7em;
-  margin: 1.5em 0 2em;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.7em;
+ margin: 1.5em 0 2em;
 }
-
-
-/* --------------------------------------------------------------------------
-   Base button
-   -------------------------------------------------------------------------- */
 
 .v-page-button {
-  display: inline-block;
-  padding: 0.55em 1em;
-  border: 1px solid;
-  border-radius: 4px;
-  font-size: 0.92em;
-  font-weight: 600;
-  line-height: 1.3;
-  text-decoration: none !important;
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    border-color 0.15s ease,
-    transform 0.15s ease;
+ display: inline-block;
+ padding: 0.55em 1em;
+ border: 1px solid;
+ border-radius: 4px;
+ font-size: 0.92em;
+ font-weight: 600;
+ line-height: 1.3;
+ text-decoration: none !important;
+ transition:
+   background-color 0.15s ease,
+   color 0.15s ease,
+   border-color 0.15s ease,
+   transform 0.15s ease;
 
-  &:hover {
-    color: #fff !important;
-    text-decoration: none !important;
-    transform: translateY(-1px);
-  }
+ &:hover {
+   color: #fff !important;
+   text-decoration: none !important;
+   transform: translateY(-1px);
+ }
 
-  &:focus {
-    outline: 2px solid rgba(73, 98, 79, 0.28);
-    outline-offset: 2px;
-  }
+ &:focus {
+   outline: 2px solid rgba(73, 98, 79, 0.28);
+   outline-offset: 2px;
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   GREEN — Research / Publications / Conferences
-   -------------------------------------------------------------------------- */
 
 .v-page-button--research,
 .v-page-button--publications,
 .v-page-button--conferences {
-  border-color: var(--victoria-green);
-  background: var(--victoria-green-light);
-  color: var(--victoria-green-dark) !important;
+ border-color: var(--victoria-green);
+ background: var(--victoria-green-light);
+ color: var(--victoria-green-dark) !important;
 
-  &:hover {
-    background: var(--victoria-green);
-    border-color: var(--victoria-green);
-  }
+ &:hover {
+   background: var(--victoria-green);
+   border-color: var(--victoria-green);
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   BLUE — Teaching / OER
-   -------------------------------------------------------------------------- */
 
 .v-page-button--teaching,
 .v-page-button--oer {
-  border-color: var(--victoria-blue);
-  background: var(--victoria-blue-light);
-  color: var(--victoria-blue-dark) !important;
+ border-color: var(--victoria-blue);
+ background: var(--victoria-blue-light);
+ color: var(--victoria-blue-dark) !important;
 
-  &:hover {
-    background: var(--victoria-blue);
-    border-color: var(--victoria-blue);
-  }
+ &:hover {
+   background: var(--victoria-blue);
+   border-color: var(--victoria-blue);
+ }
 }
-
-
-/* --------------------------------------------------------------------------
-   GOLD — Awards / Recognition
-   -------------------------------------------------------------------------- */
 
 .v-page-button--awards {
-  border-color: var(--victoria-gold);
-  background: var(--victoria-gold-light);
-  color: var(--victoria-gold-dark) !important;
+ border-color: var(--victoria-gold);
+ background: var(--victoria-gold-light);
+ color: var(--victoria-gold-dark) !important;
 
-  &:hover {
-    background: var(--victoria-gold);
-    border-color: var(--victoria-gold);
-  }
+ &:hover {
+   background: var(--victoria-gold);
+   border-color: var(--victoria-gold);
+ }
 }
 
-
-
-/* --------------------------------------------------------------------------
-   Mobile
-   -------------------------------------------------------------------------- */
-
 @media screen and (max-width: 768px) {
-
-  .v-page-links {
-    gap: 0.5em;
-  }
-
-  .v-page-button {
-    padding: 0.5em 0.8em;
-    font-size: 0.9em;
-  }
-
+ .v-page-links { gap: 0.5em; }
+ .v-page-button {
+   padding: 0.5em 0.8em;
+   font-size: 0.9em;
+ }
 }
