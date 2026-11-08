@@ -1,278 +1,695 @@
 /* ==========================================================================
    VICTORIA LINDSAY MCGEE — SITE CUSTOMISATION
-   Minimal customisations that work with AcademicPages theme
+   Light-touch visual refresh for AcademicPages.
    ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   Colour palette
+   -------------------------------------------------------------------------- */
+
+:root {
+  --victoria-green: #49624f;
+  --victoria-green-dark: #354a3b;
+  --victoria-green-light: #edf2ee;
+
+  --victoria-blue: #58717d;
+  --victoria-blue-dark: #435a64;
+  --victoria-blue-light: #edf2f4;
+
+  --victoria-gold: #987946;
+  --victoria-gold-dark: #70572f;
+  --victoria-gold-light: #f5f1e8;
+
+  --victoria-text: #303633;
+  --victoria-muted: #68716c;
+
+  --victoria-border: #d9dfdb;
+  --victoria-border-dark: #c5cec8;
+
+  --victoria-background: #f7f8f7;
+}
+
+
+/* --------------------------------------------------------------------------
+   Overall page
+   -------------------------------------------------------------------------- */
+
+body {
+  color: var(--victoria-text);
+  background-color: #fff;
+  line-height: 1.65;
+}
+
 
 /* --------------------------------------------------------------------------
    Typography
    -------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 {
-  color: #354a3b;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--victoria-green-dark);
   letter-spacing: -0.015em;
 }
 
-h1 { font-weight: 700; }
-h2, h3, h4, h5, h6 { font-weight: 650; }
+h1 {
+  font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 650;
+}
+
+p {
+  line-height: 1.7;
+}
+
 
 /* --------------------------------------------------------------------------
    Links
    -------------------------------------------------------------------------- */
+
 a {
-  color: #49624f;
-  &:hover { color: #354a3b; }
+  color: var(--victoria-green);
+
+  &:hover,
+  &:active {
+    color: var(--victoria-green-dark);
+  }
 }
 
+
 /* --------------------------------------------------------------------------
-   Masthead
+   Masthead / top navigation
    -------------------------------------------------------------------------- */
+
 .masthead {
   background: rgba(255, 255, 255, 0.97);
-  &::after { background: #d9dfdb; }
+
+  &::after {
+    background: var(--victoria-border);
+  }
 }
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    color: var(--victoria-muted);
+    font-weight: 500;
+
+    &:hover {
+      color: var(--victoria-green);
+    }
+  }
+
+  .visible-links a {
+    &::before {
+      height: 2px;
+      background: var(--victoria-green);
+    }
+  }
+
+  .visible-links li:first-child a {
+    color: var(--victoria-green-dark);
+    font-weight: 700;
+  }
+
+  .hidden-links {
+    border-color: var(--victoria-border);
+    box-shadow: 0 8px 24px rgba(53, 74, 59, 0.10);
+
+    a:hover {
+      color: var(--victoria-green-dark);
+      background: var(--victoria-green-light);
+    }
+  }
+}
+
 
 /* --------------------------------------------------------------------------
    Sidebar
    -------------------------------------------------------------------------- */
+
 .sidebar {
-  color: #68716c;
+  color: var(--victoria-muted);
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--victoria-green-dark);
+  }
+
   a {
-    color: #49624f;
-    &:hover { color: #354a3b; }
+    color: var(--victoria-green);
+
+    &:hover {
+      color: var(--victoria-green-dark);
+    }
   }
 }
 
+
 /* --------------------------------------------------------------------------
-   Author Profile
+   Author profile
+   Keep the classic AcademicPages oval portrait, with a softer frame.
    -------------------------------------------------------------------------- */
-.author__avatar img {
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 1px #d9dfdb, 0 4px 12px rgba(53, 74, 59, 0.12);
+
+.author__avatar {
+  img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow:
+      0 0 0 1px var(--victoria-border),
+      0 4px 12px rgba(53, 74, 59, 0.12);
+  }
 }
 
-.author__name { color: #354a3b; }
-.author__bio { color: #68716c; }
+.author__name {
+  color: var(--victoria-green-dark);
+}
+
+.author__bio {
+  color: var(--victoria-muted);
+}
+
+.author__urls {
+  a {
+    color: var(--victoria-muted);
+
+    &:hover {
+      color: var(--victoria-green);
+    }
+  }
+}
+
 
 /* --------------------------------------------------------------------------
-   Page Content
+   Main content
    -------------------------------------------------------------------------- */
+
+.page {
+  color: var(--victoria-text);
+}
+
+.page__title {
+  color: var(--victoria-green-dark);
+  font-weight: 700;
+}
+
 .page__content {
   h2 {
-    border-bottom-color: #d9dfdb;
+    margin-top: 2.2em;
+    padding-bottom: 0.35em;
+    border-bottom: 1px solid var(--victoria-border);
   }
+
+  h3 {
+    margin-top: 1.8em;
+  }
+
   blockquote {
-    border-left-color: #49624f;
-    background: #edf2ee;
+    border-left-color: var(--victoria-green);
+    background: var(--victoria-green-light);
+    padding: 0.8em 1em;
   }
 }
+
 
 /* --------------------------------------------------------------------------
    Tables
    -------------------------------------------------------------------------- */
+
 table {
-  border-color: #d9dfdb;
+  border: 1px solid var(--victoria-border);
+
   th {
-    background: #f7f8f7;
-    border-bottom-color: #49624f;
+    color: var(--victoria-green-dark);
+    background: var(--victoria-background);
+    border-bottom: 2px solid var(--victoria-green);
   }
-  td { border-bottom-color: #d9dfdb; }
-  tbody tr:hover { background: #fafcfb; }
+
+  td {
+    border-bottom: 1px solid var(--victoria-border);
+  }
+
+  tbody tr:hover {
+    background: #fafcfb;
+  }
 }
+
+
+/* --------------------------------------------------------------------------
+   Horizontal rules
+   -------------------------------------------------------------------------- */
+
+hr {
+  border-top-color: var(--victoria-border);
+}
+
 
 /* --------------------------------------------------------------------------
    Buttons
    -------------------------------------------------------------------------- */
+
 .btn {
-  background-color: #49624f;
-  border-color: #49624f;
+  border-radius: 3px;
+  border-color: var(--victoria-green);
+  background-color: var(--victoria-green);
   color: #fff;
+
   &:hover {
-    background-color: #354a3b;
-    border-color: #354a3b;
+    background-color: var(--victoria-green-dark);
+    border-color: var(--victoria-green-dark);
+    color: #fff;
   }
 }
+
+
+/* --------------------------------------------------------------------------
+   Notices
+   -------------------------------------------------------------------------- */
+
+.notice,
+.notice--primary,
+.notice--info,
+.notice--success,
+.notice--warning,
+.notice--danger {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 
 /* --------------------------------------------------------------------------
    Code
    -------------------------------------------------------------------------- */
+
 code {
-  background: #edf2ee;
-  border-color: #d9dfdb;
+  color: var(--victoria-green-dark);
+  background: var(--victoria-green-light);
+  border-color: var(--victoria-border);
 }
 
+
 /* --------------------------------------------------------------------------
-   Content Highlights
+   Figures / images
    -------------------------------------------------------------------------- */
+
+.page__content img {
+  border-radius: 5px;
+}
+
+
+/* ==========================================================================
+   CONTENT HIGHLIGHTS
+   Green = Research
+   Blue  = Teaching
+   Gold  = Awards / Recognition
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   Base highlight
+   -------------------------------------------------------------------------- */
+
 .v-highlight {
   margin: 1.5em 0;
   padding: 1em 1.25em;
   border-left: 3px solid;
   border-radius: 0 4px 4px 0;
+  color: var(--victoria-text);
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  a {
+    font-weight: 600;
+  }
 }
+
+
+/* --------------------------------------------------------------------------
+   Research — GREEN
+   -------------------------------------------------------------------------- */
 
 .v-research {
   @extend .v-highlight;
-  background: #edf2ee;
-  border-left-color: #49624f;
+
+  background: var(--victoria-green-light);
+  border-left-color: var(--victoria-green);
+
+  strong,
+  .v-highlight__title {
+    color: var(--victoria-green-dark);
+  }
+
+  a {
+    color: var(--victoria-green-dark);
+
+    &:hover {
+      color: var(--victoria-green);
+    }
+  }
 }
+
+
+/* --------------------------------------------------------------------------
+   Teaching — BLUE
+   -------------------------------------------------------------------------- */
 
 .v-teaching {
   @extend .v-highlight;
-  background: #edf2f4;
-  border-left-color: #58717d;
+
+  background: var(--victoria-blue-light);
+  border-left-color: var(--victoria-blue);
+
+  strong,
+  .v-highlight__title {
+    color: var(--victoria-blue-dark);
+  }
+
+  a {
+    color: var(--victoria-blue-dark);
+
+    &:hover {
+      color: var(--victoria-blue);
+    }
+  }
 }
+
+
+/* --------------------------------------------------------------------------
+   Awards / Recognition — GOLD
+   -------------------------------------------------------------------------- */
 
 .v-award {
   @extend .v-highlight;
-  background: #f5f1e8;
-  border-left-color: #987946;
+
+  background: var(--victoria-gold-light);
+  border-left-color: var(--victoria-gold);
+
+  strong,
+  .v-highlight__title {
+    color: var(--victoria-gold-dark);
+  }
+
+  a {
+    color: var(--victoria-gold-dark);
+
+    &:hover {
+      color: var(--victoria-gold);
+    }
+  }
 }
 
+
 /* --------------------------------------------------------------------------
-   Collection Items
+   Highlight title
    -------------------------------------------------------------------------- */
+
+.v-highlight__title {
+  display: block;
+  margin-bottom: 0.35em;
+  font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------------------
+   Compact highlight
+   -------------------------------------------------------------------------- */
+
+.v-highlight--compact {
+  padding: 0.7em 1em;
+  font-size: 0.95em;
+}
+
+
+/* --------------------------------------------------------------------------
+   Optional small label
+   -------------------------------------------------------------------------- */
+
+.v-highlight__label {
+  display: inline-block;
+  margin-bottom: 0.4em;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.v-research .v-highlight__label {
+  color: var(--victoria-green);
+}
+
+.v-teaching .v-highlight__label {
+  color: var(--victoria-blue);
+}
+
+.v-award .v-highlight__label {
+  color: var(--victoria-gold);
+}
+
+
+/* ==========================================================================
+   ACADEMICPAGES COLLECTION HIGHLIGHTS
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   Research collection item — GREEN
+   -------------------------------------------------------------------------- */
+
 .archive__item--research {
-  background: #edf2ee;
-  border-left: 3px solid #49624f;
+  background: var(--victoria-green-light);
+  border-left: 3px solid var(--victoria-green);
+  border-radius: 0 4px 4px 0;
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
+
+  .archive__item-title a {
+    color: var(--victoria-green-dark);
+
+    &:hover {
+      color: var(--victoria-green);
+    }
+  }
 }
+
+
+/* --------------------------------------------------------------------------
+   Teaching collection item — BLUE
+   -------------------------------------------------------------------------- */
 
 .archive__item--teaching {
-  background: #edf2f4;
-  border-left: 3px solid #58717d;
+  background: var(--victoria-blue-light);
+  border-left: 3px solid var(--victoria-blue);
+  border-radius: 0 4px 4px 0;
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
+
+  .archive__item-title a {
+    color: var(--victoria-blue-dark);
+
+    &:hover {
+      color: var(--victoria-blue);
+    }
+  }
 }
 
-.archive__item--award {
-  background: #f5f1e8;
-  border-left: 3px solid #987946;
-  padding: 1em 1.2em;
-  margin-bottom: 1.5em;
-}
 
 /* --------------------------------------------------------------------------
-   Conference Image
+   Award collection item — GOLD
    -------------------------------------------------------------------------- */
+
+.archive__item--award {
+  background: var(--victoria-gold-light);
+  border-left: 3px solid var(--victoria-gold);
+  border-radius: 0 4px 4px 0;
+  padding: 1em 1.2em;
+  margin-bottom: 1.5em;
+
+  .archive__item-title a {
+    color: var(--victoria-gold-dark);
+
+    &:hover {
+      color: var(--victoria-gold);
+    }
+  }
+}
+
+
+/* ==========================================================================
+   CONFERENCE HEADER IMAGE
+   Soft framed treatment for the image on the Conferences page.
+   ========================================================================== */
+
 .conference-header-image {
-  border: 1px solid #d9dfdb;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--victoria-border);
+  padding: 5px;
   background: #fff;
   box-shadow: 0 3px 12px rgba(53, 74, 59, 0.10);
 }
 
-/* --------------------------------------------------------------------------
-   Page Buttons
-   -------------------------------------------------------------------------- */
-.v-page-button {
-  padding: 0.55em 1em;
-  border: 1px solid;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none !important;
-  &:hover {
-    color: #fff !important;
-    transform: translateY(-1px);
-  }
-}
-
-.v-page-button--research,
-.v-page-button--publications,
-.v-page-button--conferences {
-  border-color: #49624f;
-  background: #edf2ee;
-  color: #354a3b !important;
-  &:hover {
-    background: #49624f;
-    border-color: #49624f;
-  }
-}
-
-.v-page-button--teaching,
-.v-page-button--oer {
-  border-color: #58717d;
-  background: #edf2f4;
-  color: #435a64 !important;
-  &:hover {
-    background: #58717d;
-    border-color: #58717d;
-  }
-}
-
-.v-page-button--awards {
-  border-color: #987946;
-  background: #f5f1e8;
-  color: #70572f !important;
-  &:hover {
-    background: #987946;
-    border-color: #987946;
-  }
-}
-
-/* --------------------------------------------------------------------------
-   Dark Mode Support - Simple Override
-   -------------------------------------------------------------------------- */
-html[data-theme="dark"] {
-  /* Override the CSS custom properties your theme uses */
-  --global-bg-color: #1a1c1a;
-  --global-text-color: #e8e8e8;
-  --global-text-color-light: #b0b0b0;
-  --global-border-color: #2a2f2a;
-  --global-link-color: #9fbca5;
-  --global-link-color-hover: #b8d4be;
-  --global-masthead-link-color: #e8e8e8;
-  --global-code-background-color: #2a302c;
-}
-
-html[data-theme="dark"] .masthead {
-  background: #25292d;
-}
-
-html[data-theme="dark"] .author__avatar img {
-  border-color: #25292d;
-}
-
-html[data-theme="dark"] .v-research {
-  background: #263329;
-  border-left-color: #9fbca5;
-}
-
-html[data-theme="dark"] .v-teaching {
-  background: #263036;
-  border-left-color: #9fb0bc;
-}
-
-html[data-theme="dark"] .v-award {
-  background: #362e1f;
-  border-left-color: #bca57f;
-}
-
-html[data-theme="dark"] .archive__item--research {
-  background: #263329;
-}
-
-html[data-theme="dark"] .archive__item--teaching {
-  background: #263036;
-}
-
-html[data-theme="dark"] .archive__item--award {
-  background: #362e1f;
-}
-
-html[data-theme="dark"] .conference-header-image {
-  background: #25292d;
-  border-color: #2a2f2a;
-}
 
 /* --------------------------------------------------------------------------
    Mobile
    -------------------------------------------------------------------------- */
+
 @media screen and (max-width: 768px) {
-  h1 { font-size: 1.65em; }
-  h2 { font-size: 1.25em; }
-  .page__content h2 { margin-top: 1.8em; }
-  .v-highlight { padding: 0.9em 1em; }
+
+  h1 {
+    font-size: 1.65em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .page__content {
+    h2 {
+      margin-top: 1.8em;
+    }
+  }
+
+  .v-highlight {
+    padding: 0.9em 1em;
+  }
+
   .archive__item--research,
   .archive__item--teaching,
-  .archive__item--award { padding: 0.9em 1em; }
+  .archive__item--award {
+    padding: 0.9em 1em;
+  }
+}
+
+/* ==========================================================================
+   ABOUT PAGE — COLOUR-CODED NAVIGATION BUTTONS
+   ========================================================================== */
+
+.v-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+  margin: 1.5em 0 2em;
+}
+
+
+/* --------------------------------------------------------------------------
+   Base button
+   -------------------------------------------------------------------------- */
+
+.v-page-button {
+  display: inline-block;
+  padding: 0.55em 1em;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 0.92em;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none !important;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+
+  &:hover {
+    color: #fff !important;
+    text-decoration: none !important;
+    transform: translateY(-1px);
+  }
+
+  &:focus {
+    outline: 2px solid rgba(73, 98, 79, 0.28);
+    outline-offset: 2px;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   GREEN — Research / Publications / Conferences
+   -------------------------------------------------------------------------- */
+
+.v-page-button--research,
+.v-page-button--publications,
+.v-page-button--conferences {
+  border-color: var(--victoria-green);
+  background: var(--victoria-green-light);
+  color: var(--victoria-green-dark) !important;
+
+  &:hover {
+    background: var(--victoria-green);
+    border-color: var(--victoria-green);
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   BLUE — Teaching / OER
+   -------------------------------------------------------------------------- */
+
+.v-page-button--teaching,
+.v-page-button--oer {
+  border-color: var(--victoria-blue);
+  background: var(--victoria-blue-light);
+  color: var(--victoria-blue-dark) !important;
+
+  &:hover {
+    background: var(--victoria-blue);
+    border-color: var(--victoria-blue);
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   GOLD — Awards / Recognition
+   -------------------------------------------------------------------------- */
+
+.v-page-button--awards {
+  border-color: var(--victoria-gold);
+  background: var(--victoria-gold-light);
+  color: var(--victoria-gold-dark) !important;
+
+  &:hover {
+    background: var(--victoria-gold);
+    border-color: var(--victoria-gold);
+  }
+}
+
+
+
+/* --------------------------------------------------------------------------
+   Mobile
+   -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  .v-page-links {
+    gap: 0.5em;
+  }
+
+  .v-page-button {
+    padding: 0.5em 0.8em;
+    font-size: 0.9em;
+  }
+
 }
