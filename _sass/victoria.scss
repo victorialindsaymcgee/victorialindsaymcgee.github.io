@@ -5,7 +5,7 @@
 
 
 /* --------------------------------------------------------------------------
-   Colour palette (Light Mode Default)
+   Light Mode Variables (Default)
    -------------------------------------------------------------------------- */
 
 :root {
@@ -25,86 +25,34 @@
   --victoria-muted: #68716c;
 
   --victoria-border: #d9dfdb;
-  --victoria-border-dark: #c5cec8;
-
   --victoria-background: #f7f8f7;
   --victoria-surface: #ffffff;
 }
 
 
 /* --------------------------------------------------------------------------
-   Dark Mode Overrides
-   High contrast values for readability
+   Dark Mode Variables - MATCHES YOUR THEME SELECTOR
    -------------------------------------------------------------------------- */
 
-html.dark-mode,
-[data-mode="dark"] {
-  --victoria-text: #e6e6e6;
-  --victoria-muted: #b0b0b0;
-  --victoria-background: #0f1110;
-  --victoria-surface: #1a1d1a;
+html[data-theme="dark"] {
+  --victoria-text: #e8e8e8;
+  --victoria-muted: #c0c0c0;
+  --victoria-background: #0d0f0d;
+  --victoria-surface: #151915;
   --victoria-border: #2a2f2a;
   
-  /* Box Backgrounds - Significantly darker */
-  --victoria-green-light: #1a251d;
-  --victoria-blue-light: #1a2225;
-  --victoria-gold-light: #251f1a;
+  --victoria-green-light: #152018;
+  --victoria-blue-light: #151c20;
+  --victoria-gold-light: #201a15;
 
-  /* Text Colors - Significantly lighter for contrast */
-  --victoria-green-dark: #a8c4af;
-  --victoria-blue-dark: #a8b4c4;
-  --victoria-gold-dark: #c4b4a8;
-
-  /* Explicit Body Overrides */
-  body {
-    color: var(--victoria-text);
-    background-color: var(--victoria-background);
-  }
-
-  .page {
-    color: var(--victoria-text);
-    background-color: var(--victoria-background);
-  }
-
-  .masthead {
-    background: var(--victoria-surface);
-  }
-  
-  .sidebar {
-    background: var(--victoria-surface);
-    color: var(--victoria-muted);
-  }
-  
-  /* Ensure code blocks are readable */
-  code {
-    background: #2a302c;
-    color: #e6e6e6;
-  }
-  
-  /* Ensure tables are readable */
-  table {
-    background: var(--victoria-surface);
-    th {
-      background: var(--victoria-background);
-      color: var(--victoria-text);
-    }
-    td {
-      color: var(--victoria-text);
-    }
-  }
-  
-  /* Ensure highlights are readable */
-  .v-highlight,
-  .archive__item--research,
-  .archive__item--teaching,
-  .archive__item--award {
-    color: var(--victoria-text);
-  }
+  --victoria-green-dark: #b8d4be;
+  --victoria-blue-dark: #b8c4d4;
+  --victoria-gold-dark: #d4c4b8;
 }
 
 
 /* --------------------------------------------------------------------------
-   Overall page (Light Mode Base)
+   Base Styles (Use Variables - Auto-Switch in Dark Mode)
    -------------------------------------------------------------------------- */
 
 body {
@@ -113,490 +61,151 @@ body {
   line-height: 1.65;
 }
 
-
-/* --------------------------------------------------------------------------
-   Typography
-   -------------------------------------------------------------------------- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--victoria-green-dark);
   letter-spacing: -0.015em;
 }
 
-h1 {
-  font-weight: 700;
-}
+h1 { font-weight: 700; }
+h2, h3, h4, h5, h6 { font-weight: 650; }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 650;
-}
-
-p {
-  line-height: 1.7;
-}
-
-
-/* --------------------------------------------------------------------------
-   Links
-   -------------------------------------------------------------------------- */
+p { line-height: 1.7; }
 
 a {
   color: var(--victoria-green);
-
-  &:hover,
-  &:active {
-    color: var(--victoria-green-dark);
-  }
+  &:hover { color: var(--victoria-green-dark); }
 }
-
-
-/* --------------------------------------------------------------------------
-   Masthead / top navigation
-   -------------------------------------------------------------------------- */
 
 .masthead {
   background: var(--victoria-surface);
-
-  &::after {
-    background: var(--victoria-border);
-  }
+  &::after { background: var(--victoria-border); }
 }
-
-.greedy-nav {
-  background: transparent;
-
-  a {
-    color: var(--victoria-muted);
-    font-weight: 500;
-
-    &:hover {
-      color: var(--victoria-green);
-    }
-  }
-
-  .visible-links a {
-    &::before {
-      height: 2px;
-      background: var(--victoria-green);
-    }
-  }
-
-  .visible-links li:first-child a {
-    color: var(--victoria-green-dark);
-    font-weight: 700;
-  }
-
-  .hidden-links {
-    border-color: var(--victoria-border);
-    box-shadow: 0 8px 24px rgba(53, 74, 59, 0.10);
-
-    a:hover {
-      color: var(--victoria-green-dark);
-      background: var(--victoria-green-light);
-    }
-  }
-}
-
-
-/* --------------------------------------------------------------------------
-   Sidebar
-   -------------------------------------------------------------------------- */
 
 .sidebar {
   color: var(--victoria-muted);
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: var(--victoria-green-dark);
-  }
-
   a {
     color: var(--victoria-green);
-
-    &:hover {
-      color: var(--victoria-green-dark);
-    }
+    &:hover { color: var(--victoria-green-dark); }
   }
 }
 
-
-/* --------------------------------------------------------------------------
-   Author profile
-   -------------------------------------------------------------------------- */
-
-.author__avatar {
-  img {
-    border-radius: 50%;
-    border: 3px solid var(--victoria-surface);
-    box-shadow:
-      0 0 0 1px var(--victoria-border),
-      0 4px 12px rgba(53, 74, 59, 0.12);
-  }
+.author__avatar img {
+  border-radius: 50%;
+  border: 3px solid var(--victoria-surface);
+  box-shadow: 0 0 0 1px var(--victoria-border), 0 4px 12px rgba(53, 74, 59, 0.12);
 }
 
-.author__name {
-  color: var(--victoria-green-dark);
-}
-
-.author__bio {
-  color: var(--victoria-muted);
-}
-
-.author__urls {
-  a {
-    color: var(--victoria-muted);
-
-    &:hover {
-      color: var(--victoria-green);
-    }
-  }
-}
-
-
-/* --------------------------------------------------------------------------
-   Main content
-   -------------------------------------------------------------------------- */
+.author__name { color: var(--victoria-green-dark); }
+.author__bio { color: var(--victoria-muted); }
 
 .page {
   color: var(--victoria-text);
   background-color: var(--victoria-background);
 }
 
-.page__title {
-  color: var(--victoria-green-dark);
-  font-weight: 700;
-}
-
 .page__content {
   h2 {
-    margin-top: 2.2em;
-    padding-bottom: 0.35em;
-    border-bottom: 1px solid var(--victoria-border);
+    border-bottom-color: var(--victoria-border);
   }
-
-  h3 {
-    margin-top: 1.8em;
-  }
-
   blockquote {
     border-left-color: var(--victoria-green);
     background: var(--victoria-green-light);
-    padding: 0.8em 1em;
-    color: var(--victoria-text);
   }
 }
-
-
-/* --------------------------------------------------------------------------
-   Tables
-   -------------------------------------------------------------------------- */
 
 table {
-  border: 1px solid var(--victoria-border);
-
+  border-color: var(--victoria-border);
   th {
-    color: var(--victoria-green-dark);
     background: var(--victoria-background);
-    border-bottom: 2px solid var(--victoria-green);
+    border-bottom-color: var(--victoria-green);
   }
-
-  td {
-    border-bottom: 1px solid var(--victoria-border);
-  }
-
-  tbody tr:hover {
-    background: var(--victoria-green-light);
-  }
+  td { border-bottom-color: var(--victoria-border); }
+  tbody tr:hover { background: var(--victoria-green-light); }
 }
-
-
-/* --------------------------------------------------------------------------
-   Horizontal rules
-   -------------------------------------------------------------------------- */
-
-hr {
-  border-top-color: var(--victoria-border);
-}
-
-
-/* --------------------------------------------------------------------------
-   Buttons
-   -------------------------------------------------------------------------- */
 
 .btn {
-  border-radius: 3px;
-  border-color: var(--victoria-green);
   background-color: var(--victoria-green);
+  border-color: var(--victoria-green);
   color: #fff;
-
   &:hover {
     background-color: var(--victoria-green-dark);
     border-color: var(--victoria-green-dark);
-    color: #fff;
   }
 }
 
-
-/* --------------------------------------------------------------------------
-   Notices
-   -------------------------------------------------------------------------- */
-
-.notice,
-.notice--primary,
-.notice--info,
-.notice--success,
-.notice--warning,
-.notice--danger {
-  border-radius: 0;
-  box-shadow: none;
-}
-
-
-/* --------------------------------------------------------------------------
-   Code
-   -------------------------------------------------------------------------- */
-
 code {
-  color: var(--victoria-green-dark);
   background: var(--victoria-green-light);
   border-color: var(--victoria-border);
 }
 
-
-/* --------------------------------------------------------------------------
-   Figures / images
-   -------------------------------------------------------------------------- */
-
-.page__content img {
-  border-radius: 5px;
-}
-
-
-/* ==========================================================================
-   CONTENT HIGHLIGHTS
-   ========================================================================== */
-
+/* Content highlights */
 .v-highlight {
   margin: 1.5em 0;
   padding: 1em 1.25em;
   border-left: 3px solid;
   border-radius: 0 4px 4px 0;
   color: var(--victoria-text);
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-
-  strong {
-    font-weight: 700;
-  }
-
-  a {
-    font-weight: 600;
-  }
 }
 
 .v-research {
   @extend .v-highlight;
   background: var(--victoria-green-light);
   border-left-color: var(--victoria-green);
-
-  strong,
-  .v-highlight__title {
-    color: var(--victoria-green-dark);
-  }
-
-  a {
-    color: var(--victoria-green-dark);
-    &:hover { color: var(--victoria-green); }
-  }
+  strong, .v-highlight__title, a { color: var(--victoria-green-dark); }
 }
 
 .v-teaching {
   @extend .v-highlight;
   background: var(--victoria-blue-light);
   border-left-color: var(--victoria-blue);
-
-  strong,
-  .v-highlight__title {
-    color: var(--victoria-blue-dark);
-  }
-
-  a {
-    color: var(--victoria-blue-dark);
-    &:hover { color: var(--victoria-blue); }
-  }
+  strong, .v-highlight__title, a { color: var(--victoria-blue-dark); }
 }
 
 .v-award {
   @extend .v-highlight;
   background: var(--victoria-gold-light);
   border-left-color: var(--victoria-gold);
-
-  strong,
-  .v-highlight__title {
-    color: var(--victoria-gold-dark);
-  }
-
-  a {
-    color: var(--victoria-gold-dark);
-    &:hover { color: var(--victoria-gold); }
-  }
+  strong, .v-highlight__title, a { color: var(--victoria-gold-dark); }
 }
 
-.v-highlight__title {
-  display: block;
-  margin-bottom: 0.35em;
-  font-weight: 700;
-}
-
-.v-highlight--compact {
-  padding: 0.7em 1em;
-  font-size: 0.95em;
-}
-
-.v-highlight__label {
-  display: inline-block;
-  margin-bottom: 0.4em;
-  font-size: 0.72em;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.v-research .v-highlight__label { color: var(--victoria-green); }
-.v-teaching .v-highlight__label { color: var(--victoria-blue); }
-.v-award .v-highlight__label { color: var(--victoria-gold); }
-
-
-/* ==========================================================================
-   ACADEMICPAGES COLLECTION HIGHLIGHTS
-   ========================================================================== */
-
+/* Collection items */
 .archive__item--research {
   background: var(--victoria-green-light);
   border-left: 3px solid var(--victoria-green);
-  border-radius: 0 4px 4px 0;
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
-
-  .archive__item-title a {
-    color: var(--victoria-green-dark);
-    &:hover { color: var(--victoria-green); }
-  }
 }
 
 .archive__item--teaching {
   background: var(--victoria-blue-light);
   border-left: 3px solid var(--victoria-blue);
-  border-radius: 0 4px 4px 0;
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
-
-  .archive__item-title a {
-    color: var(--victoria-blue-dark);
-    &:hover { color: var(--victoria-blue); }
-  }
 }
 
 .archive__item--award {
   background: var(--victoria-gold-light);
   border-left: 3px solid var(--victoria-gold);
-  border-radius: 0 4px 4px 0;
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
-
-  .archive__item-title a {
-    color: var(--victoria-gold-dark);
-    &:hover { color: var(--victoria-gold); }
-  }
 }
 
-
-/* ==========================================================================
-   CONFERENCE HEADER IMAGE
-   ========================================================================== */
-
 .conference-header-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
   border: 1px solid var(--victoria-border);
-  padding: 5px;
   background: var(--victoria-surface);
   box-shadow: 0 3px 12px rgba(53, 74, 59, 0.10);
 }
 
-
-/* --------------------------------------------------------------------------
-   Mobile
-   -------------------------------------------------------------------------- */
-
-@media screen and (max-width: 768px) {
-  h1 { font-size: 1.65em; }
-  h2 { font-size: 1.25em; }
-
-  .page__content {
-    h2 { margin-top: 1.8em; }
-  }
-
-  .v-highlight { padding: 0.9em 1em; }
-
-  .archive__item--research,
-  .archive__item--teaching,
-  .archive__item--award {
-    padding: 0.9em 1em;
-  }
-}
-
-
-/* ==========================================================================
-   ABOUT PAGE — COLOUR-CODED NAVIGATION BUTTONS
-   ========================================================================== */
-
-.v-page-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7em;
-  margin: 1.5em 0 2em;
-}
-
+/* Page buttons */
 .v-page-button {
-  display: inline-block;
   padding: 0.55em 1em;
   border: 1px solid;
   border-radius: 4px;
-  font-size: 0.92em;
   font-weight: 600;
-  line-height: 1.3;
   text-decoration: none !important;
-  transition:
-    background-color 0.15s ease,
-    color 0.15s ease,
-    border-color 0.15s ease,
-    transform 0.15s ease;
-
   &:hover {
     color: #fff !important;
-    text-decoration: none !important;
     transform: translateY(-1px);
-  }
-
-  &:focus {
-    outline: 2px solid rgba(73, 98, 79, 0.28);
-    outline-offset: 2px;
   }
 }
 
@@ -606,7 +215,6 @@ code {
   border-color: var(--victoria-green);
   background: var(--victoria-green-light);
   color: var(--victoria-green-dark) !important;
-
   &:hover {
     background: var(--victoria-green);
     border-color: var(--victoria-green);
@@ -618,7 +226,6 @@ code {
   border-color: var(--victoria-blue);
   background: var(--victoria-blue-light);
   color: var(--victoria-blue-dark) !important;
-
   &:hover {
     background: var(--victoria-blue);
     border-color: var(--victoria-blue);
@@ -629,18 +236,19 @@ code {
   border-color: var(--victoria-gold);
   background: var(--victoria-gold-light);
   color: var(--victoria-gold-dark) !important;
-
   &:hover {
     background: var(--victoria-gold);
     border-color: var(--victoria-gold);
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 768px) {
-  .v-page-links { gap: 0.5em; }
-  .v-page-button {
-    padding: 0.5em 0.8em;
-    font-size: 0.9em;
-  }
+  h1 { font-size: 1.65em; }
+  h2 { font-size: 1.25em; }
+  .page__content h2 { margin-top: 1.8em; }
+  .v-highlight { padding: 0.9em 1em; }
+  .archive__item--research,
+  .archive__item--teaching,
+  .archive__item--award { padding: 0.9em 1em; }
 }
-
