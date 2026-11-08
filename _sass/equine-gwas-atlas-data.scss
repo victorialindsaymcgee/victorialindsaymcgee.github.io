@@ -9,42 +9,26 @@
 
 .gwas-atlas-data {
 
-  /* Light Mode Variables */
-  --atlas-green: #49624f;
-  --atlas-green-dark: #354a3b;
-  --atlas-green-light: #edf2ee;
+  /* INHERIT FROM VICTORIA THEME */
+  /* This ensures Atlas automatically follows the site-wide dark mode toggle */
+  --atlas-green: var(--victoria-green);
+  --atlas-green-dark: var(--victoria-green-dark);
+  --atlas-green-light: var(--victoria-green-light);
 
-  --atlas-blue: #58717d;
-  --atlas-blue-light: #edf2f4;
+  --atlas-blue: var(--victoria-blue);
+  --atlas-blue-light: var(--victoria-blue-light);
 
-  --atlas-gold: #987946;
-  --atlas-gold-light: #f5f1e8;
+  --atlas-gold: var(--victoria-gold);
+  --atlas-gold-light: var(--victoria-gold-light);
 
-  --atlas-text: #303633;
-  --atlas-muted: #68716c;
+  --atlas-text: var(--victoria-text);
+  --atlas-muted: var(--victoria-muted);
 
-  --atlas-border: #d9dfdb;
-  --atlas-border-dark: #c5cec8;
+  --atlas-border: var(--victoria-border);
+  --atlas-border-dark: var(--victoria-border-dark);
 
-  --atlas-background: #f7f8f7;
-  --atlas-surface: #ffffff;
-
-  /* Dark Mode Overrides */
-  html.dark-mode & {
-    --atlas-text: #e8e8e8;
-    --atlas-muted: #c0c0c0;
-    --atlas-background: #0d0f0d;
-    --atlas-surface: #151915;
-    --atlas-border: #2a2f2a;
-    
-    --atlas-green-light: #152018;
-    --atlas-blue-light: #151c20;
-    --atlas-gold-light: #201a15;
-
-    --atlas-green-dark: #b8d4be;
-    --atlas-blue-dark: #b8c4d4;
-    --atlas-gold-dark: #d4c4b8;
-  }
+  --atlas-background: var(--victoria-background);
+  --atlas-surface: var(--victoria-surface);
 
 
   /*
@@ -193,7 +177,86 @@
    * Tabs
    */
 
-  &__0.76rem;
+  &__tabs {
+    display: flex;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid var(--atlas-border);
+  }
+
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-bottom: 3px solid transparent;
+    background: transparent;
+    color: var(--atlas-muted);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+
+
+  &__tab span {
+    color: #9aa29d;
+    font-size: 0.63rem;
+    font-weight: 700;
+  }
+
+
+  &__tab:hover {
+    color: var(--atlas-green);
+  }
+
+
+  &__tab.is-active {
+    border-bottom-color: var(--atlas-green);
+    color: var(--atlas-green);
+  }
+
+
+  /*
+   * Dataset heading
+   */
+
+  &__dataset-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+
+  &__dataset-header h3 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+  }
+
+
+  &__dataset-header p {
+    margin: 0;
+    color: var(--atlas-muted);
+    font-size: 0.78rem;
+  }
+
+
+  &__dataset-actions {
+    display: flex;
+    align-items: center;
+    gap: 1 1rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--atlas-border);
+  }
+
+
+  &__footer-links a {
+    color: var(--atlas-green) !important;
+    font-size: 0.76rem;
     font-weight: 600;
     text-decoration: none !important;
   }
@@ -272,16 +335,3 @@
   }
 
 }
-/* Force Light Mode on Atlas Pages */
-body.gwas-atlas-page {
-  --victoria-background: #f7f8f7;
-  --victoria-text: #303633;
-  --victoria-surface: #ffffff;
-}
-
-/* Hide the Dark Mode Toggle Button on Atlas Pages */
-body.gwas-atlas-page .dark-mode-toggle {
-  display: none !important;
-}
-
-
