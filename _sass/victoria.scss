@@ -9,6 +9,7 @@
    -------------------------------------------------------------------------- */
 
 :root {
+  /* Light Mode Variables */
   --victoria-green: #49624f;
   --victoria-green-dark: #354a3b;
   --victoria-green-light: #edf2ee;
@@ -28,6 +29,26 @@
   --victoria-border-dark: #c5cec8;
 
   --victoria-background: #f7f8f7;
+  --victoria-surface: #ffffff;
+}
+
+/* Dark Mode Overrides */
+[data-mode="dark"] {
+  --victoria-text: #e1e4e6;
+  --victoria-muted: #b0b6bb;
+  --victoria-background: #1a1c1a;
+  --victoria-surface: #25292d;
+  --victoria-border: #3a3f44;
+  
+  /* Adjust light colors to be darker for dark mode backgrounds */
+  --victoria-green-light: #2a382e;
+  --victoria-blue-light: #2a353b;
+  --victoria-gold-light: #3b2f1a;
+
+  /* Adjust dark colors to be lighter for dark mode text */
+  --victoria-green-dark: #8fa896;
+  --victoria-blue-dark: #8fa3b0;
+  --victoria-gold-dark: #b09a70;
 }
 
 
@@ -37,7 +58,7 @@
 
 body {
   color: var(--victoria-text);
-  background-color: #fff;
+  background-color: var(--victoria-background);
   line-height: 1.65;
 }
 
@@ -92,7 +113,8 @@ a {
    -------------------------------------------------------------------------- */
 
 .masthead {
-  background: rgba(255, 255, 255, 0.97);
+  /* Replaced rgba(255, 255, 255, 0.97) with variable for dark mode support */
+  background: var(--victoria-surface);
 
   &::after {
     background: var(--victoria-border);
@@ -168,7 +190,8 @@ a {
 .author__avatar {
   img {
     border-radius: 50%;
-    border: 3px solid #fff;
+    /* Replaced #fff with variable */
+    border: 3px solid var(--victoria-surface);
     box-shadow:
       0 0 0 1px var(--victoria-border),
       0 4px 12px rgba(53, 74, 59, 0.12);
@@ -244,7 +267,8 @@ table {
   }
 
   tbody tr:hover {
-    background: #fafcfb;
+    /* Replaced #fafcfb with variable */
+    background: var(--victoria-green-light);
   }
 }
 
@@ -545,7 +569,8 @@ code {
   border-radius: 8px;
   border: 1px solid var(--victoria-border);
   padding: 5px;
-  background: #fff;
+  /* Replaced #fff with variable */
+  background: var(--victoria-surface);
   box-shadow: 0 3px 12px rgba(53, 74, 59, 0.10);
 }
 
