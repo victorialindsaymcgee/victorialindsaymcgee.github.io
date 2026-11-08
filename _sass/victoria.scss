@@ -39,21 +39,21 @@
 
 html.dark-mode,
 [data-mode="dark"] {
-  --victoria-text: #e1e4e6;
-  --victoria-muted: #b0b6bb;
-  --victoria-background: #121412;
-  --victoria-surface: #1e2225;
-  --victoria-border: #3a3f44;
+  --victoria-text: #e6e6e6;
+  --victoria-muted: #b0b0b0;
+  --victoria-background: #0f1110;
+  --victoria-surface: #1a1d1a;
+  --victoria-border: #2a2f2a;
   
-  /* Box Backgrounds - Made darker to avoid "light box" effect */
-  --victoria-green-light: #263329;
-  --victoria-blue-light: #263036;
-  --victoria-gold-light: #362e1f;
+  /* Box Backgrounds - Significantly darker */
+  --victoria-green-light: #1a251d;
+  --victoria-blue-light: #1a2225;
+  --victoria-gold-light: #251f1a;
 
-  /* Text Colors - Made lighter for contrast against dark boxes */
-  --victoria-green-dark: #9fbca5;
-  --victoria-blue-dark: #9fb0bc;
-  --victoria-gold-dark: #bca57f;
+  /* Text Colors - Significantly lighter for contrast */
+  --victoria-green-dark: #a8c4af;
+  --victoria-blue-dark: #a8b4c4;
+  --victoria-gold-dark: #c4b4a8;
 
   /* Explicit Body Overrides */
   body {
@@ -78,7 +78,7 @@ html.dark-mode,
   /* Ensure code blocks are readable */
   code {
     background: #2a302c;
-    color: #d1d5d1;
+    color: #e6e6e6;
   }
   
   /* Ensure tables are readable */
@@ -91,6 +91,14 @@ html.dark-mode,
     td {
       color: var(--victoria-text);
     }
+  }
+  
+  /* Ensure highlights are readable */
+  .v-highlight,
+  .archive__item--research,
+  .archive__item--teaching,
+  .archive__item--award {
+    color: var(--victoria-text);
   }
 }
 
