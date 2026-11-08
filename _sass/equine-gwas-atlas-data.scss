@@ -272,3 +272,16 @@
   }
 
 }
+/* Force Light Mode on Atlas Pages */
+body.gwas-atlas-page {
+  --victoria-background: #f7f8f7;
+  --victoria-text: #303633;
+  --victoria-surface: #ffffff;
+}
+
+/* Hide the Dark Mode Toggle Button on Atlas Pages */
+body.gwas-atlas-page .dark-mode-toggle {
+  display: none !important;
+}
+
+
