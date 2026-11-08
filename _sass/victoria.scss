@@ -1,93 +1,43 @@
 /* ==========================================================================
    VICTORIA LINDSAY MCGEE — SITE CUSTOMISATION
-   Overrides global theme variables to ensure site-wide dark mode support
+   Minimal customisations that work with AcademicPages theme
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   LIGHT MODE (Default)
-   Overrides theme/default.scss variables
+   Typography
    -------------------------------------------------------------------------- */
-:root {
-  /* Core Theme Overrides */
-  --global-bg-color: #f7f8f7;
-  --global-text-color: #303633;
-  --global-text-color-light: #68716c;
-  --global-border-color: #d9dfdb;
-  --global-link-color: #49624f;
-  --global-link-color-hover: #354a3b;
-  --global-masthead-link-color: #303633;
-  --global-code-background-color: #edf2ee;
-  
-  /* Victoria Custom Variables */
-  --victoria-green: #49624f;
-  --victoria-green-dark: #354a3b;
-  --victoria-green-light: #edf2ee;
-  --victoria-blue: #58717d;
-  --victoria-blue-dark: #435a64;
-  --victoria-blue-light: #edf2f4;
-  --victoria-gold: #987946;
-  --victoria-gold-dark: #70572f;
-  --victoria-gold-light: #f5f1e8;
-  --victoria-surface: #ffffff;
+h1, h2, h3, h4, h5, h6 {
+  color: #354a3b;
+  letter-spacing: -0.015em;
 }
+
+h1 { font-weight: 700; }
+h2, h3, h4, h5, h6 { font-weight: 650; }
 
 /* --------------------------------------------------------------------------
-   DARK MODE
-   Overrides theme/dark.scss variables - MATCHES YOUR THEME SELECTOR
+   Links
    -------------------------------------------------------------------------- */
-html[data-theme="dark"] {
-  /* Core Theme Overrides */
-  --global-bg-color: #0d0f0d;
-  --global-text-color: #e8e8e8;
-  --global-text-color-light: #c0c0c0;
-  --global-border-color: #2a2f2a;
-  --global-link-color: #b8d4be;
-  --global-link-color-hover: #d4c4b8;
-  --global-masthead-link-color: #e8e8e8;
-  --global-code-background-color: #152018;
-  
-  /* Victoria Custom Variables */
-  --victoria-green: #b8d4be;
-  --victoria-green-dark: #d4c4b8;
-  --victoria-green-light: #152018;
-  --victoria-blue: #b8c4d4;
-  --victoria-blue-dark: #d4c4b8;
-  --victoria-blue-light: #151c20;
-  --victoria-gold: #d4c4b8;
-  --victoria-gold-dark: #e8e8e8;
-  --victoria-gold-light: #201a15;
-  --victoria-surface: #151915;
-}
-
-/* --------------------------------------------------------------------------
-   Base Styles
-   -------------------------------------------------------------------------- */
-body {
-  background-color: var(--global-bg-color);
-  color: var(--global-text-color);
-}
-
 a {
-  color: var(--global-link-color);
-  &:hover { color: var(--global-link-color-hover); }
+  color: #49624f;
+  &:hover { color: #354a3b; }
 }
 
 /* --------------------------------------------------------------------------
    Masthead
    -------------------------------------------------------------------------- */
 .masthead {
-  background: var(--victoria-surface);
-  &::after { background: var(--global-border-color); }
+  background: rgba(255, 255, 255, 0.97);
+  &::after { background: #d9dfdb; }
 }
 
 /* --------------------------------------------------------------------------
    Sidebar
    -------------------------------------------------------------------------- */
 .sidebar {
-  color: var(--global-text-color-light);
+  color: #68716c;
   a {
-    color: var(--global-link-color);
-    &:hover { color: var(--global-link-color-hover); }
+    color: #49624f;
+    &:hover { color: #354a3b; }
   }
 }
 
@@ -96,26 +46,23 @@ a {
    -------------------------------------------------------------------------- */
 .author__avatar img {
   border-radius: 50%;
-  border: 3px solid var(--victoria-surface);
-  box-shadow: 0 0 0 1px var(--global-border-color), 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px #d9dfdb, 0 4px 12px rgba(53, 74, 59, 0.12);
 }
 
-.author__name { color: var(--global-text-color); }
-.author__bio { color: var(--global-text-color-light); }
+.author__name { color: #354a3b; }
+.author__bio { color: #68716c; }
 
 /* --------------------------------------------------------------------------
    Page Content
    -------------------------------------------------------------------------- */
-.page {
-  color: var(--global-text-color);
-}
-
 .page__content {
-  h2 { border-bottom-color: var(--global-border-color); }
+  h2 {
+    border-bottom-color: #d9dfdb;
+  }
   blockquote {
-    border-left-color: var(--victoria-green);
-    background: var(--victoria-green-light);
-    color: var(--global-text-color);
+    border-left-color: #49624f;
+    background: #edf2ee;
   }
 }
 
@@ -123,29 +70,25 @@ a {
    Tables
    -------------------------------------------------------------------------- */
 table {
-  border-color: var(--global-border-color);
+  border-color: #d9dfdb;
   th {
-    background: var(--global-bg-color);
-    border-bottom-color: var(--victoria-green);
-    color: var(--global-text-color);
+    background: #f7f8f7;
+    border-bottom-color: #49624f;
   }
-  td {
-    border-bottom-color: var(--global-border-color);
-    color: var(--global-text-color);
-  }
-  tbody tr:hover { background: var(--victoria-green-light); }
+  td { border-bottom-color: #d9dfdb; }
+  tbody tr:hover { background: #fafcfb; }
 }
 
 /* --------------------------------------------------------------------------
    Buttons
    -------------------------------------------------------------------------- */
 .btn {
-  background-color: var(--victoria-green);
-  border-color: var(--victoria-green);
+  background-color: #49624f;
+  border-color: #49624f;
   color: #fff;
   &:hover {
-    background-color: var(--victoria-green-dark);
-    border-color: var(--victoria-green-dark);
+    background-color: #354a3b;
+    border-color: #354a3b;
   }
 }
 
@@ -153,9 +96,8 @@ table {
    Code
    -------------------------------------------------------------------------- */
 code {
-  background: var(--global-code-background-color);
-  border-color: var(--global-border-color);
-  color: var(--global-text-color);
+  background: #edf2ee;
+  border-color: #d9dfdb;
 }
 
 /* --------------------------------------------------------------------------
@@ -166,50 +108,46 @@ code {
   padding: 1em 1.25em;
   border-left: 3px solid;
   border-radius: 0 4px 4px 0;
-  color: var(--global-text-color);
 }
 
 .v-research {
   @extend .v-highlight;
-  background: var(--victoria-green-light);
-  border-left-color: var(--victoria-green);
-  strong, .v-highlight__title, a { color: var(--victoria-green-dark); }
+  background: #edf2ee;
+  border-left-color: #49624f;
 }
 
 .v-teaching {
   @extend .v-highlight;
-  background: var(--victoria-blue-light);
-  border-left-color: var(--victoria-blue);
-  strong, .v-highlight__title, a { color: var(--victoria-blue-dark); }
+  background: #edf2f4;
+  border-left-color: #58717d;
 }
 
 .v-award {
   @extend .v-highlight;
-  background: var(--victoria-gold-light);
-  border-left-color: var(--victoria-gold);
-  strong, .v-highlight__title, a { color: var(--victoria-gold-dark); }
+  background: #f5f1e8;
+  border-left-color: #987946;
 }
 
 /* --------------------------------------------------------------------------
    Collection Items
    -------------------------------------------------------------------------- */
 .archive__item--research {
-  background: var(--victoria-green-light);
-  border-left: 3px solid var(--victoria-green);
+  background: #edf2ee;
+  border-left: 3px solid #49624f;
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
 }
 
 .archive__item--teaching {
-  background: var(--victoria-blue-light);
-  border-left: 3px solid var(--victoria-blue);
+  background: #edf2f4;
+  border-left: 3px solid #58717d;
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
 }
 
 .archive__item--award {
-  background: var(--victoria-gold-light);
-  border-left: 3px solid var(--victoria-gold);
+  background: #f5f1e8;
+  border-left: 3px solid #987946;
   padding: 1em 1.2em;
   margin-bottom: 1.5em;
 }
@@ -218,9 +156,9 @@ code {
    Conference Image
    -------------------------------------------------------------------------- */
 .conference-header-image {
-  border: 1px solid var(--global-border-color);
-  background: var(--victoria-surface);
-  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  border: 1px solid #d9dfdb;
+  background: #fff;
+  box-shadow: 0 3px 12px rgba(53, 74, 59, 0.10);
 }
 
 /* --------------------------------------------------------------------------
@@ -241,34 +179,89 @@ code {
 .v-page-button--research,
 .v-page-button--publications,
 .v-page-button--conferences {
-  border-color: var(--victoria-green);
-  background: var(--victoria-green-light);
-  color: var(--victoria-green-dark) !important;
+  border-color: #49624f;
+  background: #edf2ee;
+  color: #354a3b !important;
   &:hover {
-    background: var(--victoria-green);
-    border-color: var(--victoria-green);
+    background: #49624f;
+    border-color: #49624f;
   }
 }
 
 .v-page-button--teaching,
 .v-page-button--oer {
-  border-color: var(--victoria-blue);
-  background: var(--victoria-blue-light);
-  color: var(--victoria-blue-dark) !important;
+  border-color: #58717d;
+  background: #edf2f4;
+  color: #435a64 !important;
   &:hover {
-    background: var(--victoria-blue);
-    border-color: var(--victoria-blue);
+    background: #58717d;
+    border-color: #58717d;
   }
 }
 
 .v-page-button--awards {
-  border-color: var(--victoria-gold);
-  background: var(--victoria-gold-light);
-  color: var(--victoria-gold-dark) !important;
+  border-color: #987946;
+  background: #f5f1e8;
+  color: #70572f !important;
   &:hover {
-    background: var(--victoria-gold);
-    border-color: var(--victoria-gold);
+    background: #987946;
+    border-color: #987946;
   }
+}
+
+/* --------------------------------------------------------------------------
+   Dark Mode Support - Simple Override
+   -------------------------------------------------------------------------- */
+html[data-theme="dark"] {
+  /* Override the CSS custom properties your theme uses */
+  --global-bg-color: #1a1c1a;
+  --global-text-color: #e8e8e8;
+  --global-text-color-light: #b0b0b0;
+  --global-border-color: #2a2f2a;
+  --global-link-color: #9fbca5;
+  --global-link-color-hover: #b8d4be;
+  --global-masthead-link-color: #e8e8e8;
+  --global-code-background-color: #2a302c;
+}
+
+html[data-theme="dark"] .masthead {
+  background: #25292d;
+}
+
+html[data-theme="dark"] .author__avatar img {
+  border-color: #25292d;
+}
+
+html[data-theme="dark"] .v-research {
+  background: #263329;
+  border-left-color: #9fbca5;
+}
+
+html[data-theme="dark"] .v-teaching {
+  background: #263036;
+  border-left-color: #9fb0bc;
+}
+
+html[data-theme="dark"] .v-award {
+  background: #362e1f;
+  border-left-color: #bca57f;
+}
+
+html[data-theme="dark"] .archive__item--research {
+  background: #263329;
+}
+
+html[data-theme="dark"] .archive__item--teaching {
+  background: #263036;
+}
+
+html[data-theme="dark"] .archive__item--award {
+  background: #362e1f;
+}
+
+html[data-theme="dark"] .conference-header-image {
+  background: #25292d;
+  border-color: #2a2f2a;
 }
 
 /* --------------------------------------------------------------------------
