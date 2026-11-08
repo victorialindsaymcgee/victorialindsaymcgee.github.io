@@ -9,28 +9,21 @@
 
 .gwas-atlas-data {
 
-  /* INHERIT FROM VICTORIA THEME */
-  /* This ensures Atlas automatically follows the site-wide dark mode toggle */
+  /* INHERIT FROM VICTORIA - Auto-switches with dark mode */
   --atlas-green: var(--victoria-green);
   --atlas-green-dark: var(--victoria-green-dark);
   --atlas-green-light: var(--victoria-green-light);
-
   --atlas-blue: var(--victoria-blue);
   --atlas-blue-light: var(--victoria-blue-light);
-
   --atlas-gold: var(--victoria-gold);
   --atlas-gold-light: var(--victoria-gold-light);
-
   --atlas-text: var(--victoria-text);
   --atlas-muted: var(--victoria-muted);
-
   --atlas-border: var(--victoria-border);
-  --atlas-border-dark: var(--victoria-border-dark);
-
   --atlas-background: var(--victoria-background);
   --atlas-surface: var(--victoria-surface);
 
-
+  /* ... rest of your existing Atlas CSS unchanged ... */
   /*
    * Intro
    */
