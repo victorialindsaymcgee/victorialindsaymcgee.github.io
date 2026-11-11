@@ -1,5 +1,5 @@
 /* ==========================================================================
-   VICTORIA LINDSAY MCGEE â€” SITE CUSTOMISATION
+   VICTORIA LINDSAY MCGEE â€" SITE CUSTOMISATION
    Minimal customisations that work with AcademicPages theme
    ========================================================================== */
 
@@ -128,6 +128,32 @@ code {
   border-left-color: #987946;
 }
 
+/* Highlight labels and titles */
+.v-highlight__label {
+  display: inline-block;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: #49624f;
+  padding: 0.25em 0.65em;
+  border-radius: 3px;
+  margin-bottom: 0.5em;
+}
+
+.v-highlight__title {
+  display: block;
+  font-size: 1.15em;
+  font-weight: 650;
+  color: #354a3b;
+  margin: 0.25em 0 0.75em 0;
+}
+
+.v-highlight--compact {
+  padding: 0.9em 1.1em;
+}
+
 /* --------------------------------------------------------------------------
    Collection Items
    -------------------------------------------------------------------------- */
@@ -245,6 +271,15 @@ html[data-theme="dark"] .v-teaching {
 html[data-theme="dark"] .v-award {
   background: #362e1f;
   border-left-color: #bca57f;
+}
+
+html[data-theme="dark"] .v-highlight__label {
+  background: #9fbca5;
+  color: #1a1c1a;
+}
+
+html[data-theme="dark"] .v-highlight__title {
+  color: #e8e8e8;
 }
 
 html[data-theme="dark"] .archive__item--research {
