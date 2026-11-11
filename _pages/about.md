@@ -13,7 +13,6 @@ About me
 I am an equine geneticist and veterinary data analyst, and Lecturer in Applied Animal Science & Husbandry at the University of Edinburgh's [Royal (Dick) School of Veterinary Studies](https://vet.ed.ac.uk/). I lead the Animal Life and Food Safety courses for graduate entry, first and second year [veterinary medicine students](https://vet.ed.ac.uk/education/undergraduate), and contribute to MSc teaching in research methods, statistics and quantitative genetics.
 
 <div class="v-research">
-  <span class="v-highlight__label">Research</span>
   <span class="v-highlight__title">Evidence-informed research across equine health, performance and welfare</span>
 
   <p>
