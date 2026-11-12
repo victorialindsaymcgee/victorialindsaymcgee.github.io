@@ -190,6 +190,13 @@ code {
 /* --------------------------------------------------------------------------
    Page Buttons
    -------------------------------------------------------------------------- */
+.v-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  margin: 1em 0;
+}
+
 .v-page-button {
   padding: 0.55em 1em;
   border: 1px solid;
